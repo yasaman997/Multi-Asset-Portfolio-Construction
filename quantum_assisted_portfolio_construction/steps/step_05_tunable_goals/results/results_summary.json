@@ -1,0 +1,32 @@
+{
+  "custom_scores": {
+    "growth": 55,
+    "income": 55,
+    "drawdown_control": 70,
+    "cost_sensitivity": 60
+  },
+  "preference_shares_pct": {
+    "growth": 22.9,
+    "income": 22.9,
+    "drawdown": 29.2,
+    "cost": 25.0
+  },
+  "primary_classical": {
+    "expected_return_pct": 5.49,
+    "volatility_pct": 7.86,
+    "worst_scenario_loss_pct": 12.71,
+    "gross_turnover_pct": 13.09,
+    "trading_cost_pct": 0.002,
+    "effective_holdings": 33.73,
+    "soft_warnings": 5
+  },
+  "strict_warning": {
+    "expected_return_pct": 5.48,
+    "volatility_pct": 7.51,
+    "worst_scenario_loss_pct": 12.17,
+    "gross_turnover_pct": 23.88,
+    "trading_cost_pct": 0.0056,
+    "effective_holdings": 29.35,
+    "soft_warnings": 0
+  }
+}
