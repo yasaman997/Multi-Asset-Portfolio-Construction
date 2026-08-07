@@ -1,0 +1,39 @@
+{
+  "formal_verdict": "PASS_QAOA_EXACT",
+  "evidence_tier": "FINAL_CHALLENGE_EVIDENCE within the declared synthetic model",
+  "independent_solvers": {
+    "base_global": "CVXPY Clarabel",
+    "strict_global": "CVXPY Clarabel",
+    "qaoa_support": "CVXPY OSQP",
+    "exact_support": "CVXPY OSQP"
+  },
+  "hard_constraint_audit": {
+    "base_global": {
+      "constraints": 130,
+      "failures": 0,
+      "max_violation": 2.22e-16
+    },
+    "qaoa_fixed_support": {
+      "constraints": 174,
+      "failures": 0,
+      "max_violation": 1.04e-17
+    },
+    "exact_fixed_support": {
+      "constraints": 174,
+      "failures": 0,
+      "max_violation": 1.04e-17
+    },
+    "strict_global": {
+      "constraints": 130,
+      "failures": 0,
+      "max_violation": 7.77e-16
+    }
+  },
+  "all_kkt_certificates_pass": true,
+  "weight_l1_differences": {
+    "primary": 2.07e-10,
+    "qaoa": 1.57e-14,
+    "exact": 1.57e-14,
+    "strict": 9.08e-07
+  }
+}
