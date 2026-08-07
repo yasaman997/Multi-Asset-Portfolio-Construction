@@ -1,0 +1,6 @@
+index,portfolio_loss,warning_threshold,hard_loss_limit,exact_excess,hard_limit_satisfied
+Global equity selloff,0.074776,0.114101,0.154101,0.0,True
+Inflation and rate shock,0.062871,0.069719,0.109719,0.0,True
+Credit and liquidity crisis,0.080504,0.09909,0.13909,0.0,True
+Commodity supply shock,0.021436,0.020282,0.060282,0.001154,True
+Broad deleveraging shock,0.103633,0.12327,0.16327,0.0,True
