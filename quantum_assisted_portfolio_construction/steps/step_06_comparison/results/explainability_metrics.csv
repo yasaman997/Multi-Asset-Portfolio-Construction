@@ -1,0 +1,15 @@
+candidate,family,role,method,method_traceability,nonzero_holdings,material_holdings_count,active_trade_count,top5_weight_share,top10_weight_share,expected_return_top5_abs_coverage,volatility_top5_abs_coverage,turnover_top5_coverage,worst_scenario_top5_abs_coverage,binding_guardrail_count,maximum_attribution_reconciliation_error
+Baseline | Current portfolio,Baseline,Incumbent benchmark,Current strategic allocation,100%,50,49,0,20.0%,36.2%,18.5%,21.5%,100.0%,20.2%,0,2.78e-17
+Step 4 | 01_minimum_variance,Step 4,Constraint-ladder diagnostic,Deterministic classical constraint ladder,100%,11,4,49,99.5%,100.0%,99.2%,99.5%,56.3%,79.5%,0,8.67e-19
+Step 4 | 02_mean_variance,Step 4,Constraint-ladder diagnostic,Deterministic classical constraint ladder,100%,7,6,50,97.5%,100.0%,96.4%,95.8%,52.8%,96.9%,0,6.94e-18
+Step 4 | 03_asset_caps,Step 4,Constraint-ladder diagnostic,Deterministic classical constraint ladder,100%,15,15,50,55.0%,90.4%,59.1%,79.2%,32.0%,73.5%,6,1.39e-17
+Step 4 | 04_guardrails,Step 4,Constraint-ladder diagnostic,Deterministic classical constraint ladder,100%,20,19,50,51.0%,76.9%,50.4%,58.5%,35.7%,54.1%,7,2.78e-17
+Step 4 | 05_trading_costs,Step 4,Investable Step 4 benchmark,Deterministic classical constraint ladder,100%,37,34,26,38.3%,56.2%,36.7%,33.2%,53.5%,32.8%,3,1.39e-17
+Step 4 | 06_scenario_aware,Step 4,Investable Step 4 benchmark,Deterministic classical constraint ladder,100%,38,35,25,37.7%,55.6%,36.4%,32.6%,52.5%,32.0%,4,1.39e-17
+Primary unrestricted classical,Step 5 / 5Q,Primary continuous benchmark,Full continuous classical optimization,100%,46,46,6,24.3%,41.4%,22.4%,23.8%,96.3%,21.9%,0,2.78e-17
+Independent Qiskit QAOA,Step 5 / 5Q,Quantum-assisted decision candidate,QAOA active-set selection plus continuous refinement,65%,48,47,4,23.3%,40.4%,21.6%,23.7%,100.0%,21.9%,0,2.78e-17
+Classical-target-recovery exact audit,Step 5 / 5Q,Diagnostic-only target-recovery audit,Exact recovery of an already solved classical trade target,80%,46,46,6,24.3%,41.4%,22.4%,23.8%,96.3%,21.9%,0,2.78e-17
+Independent exact active-set benchmark,Step 5 / 5Q,Exact reduced-problem benchmark,Exact active-set enumeration plus continuous refinement,95%,48,47,4,23.3%,40.4%,21.6%,23.7%,100.0%,21.9%,0,2.78e-17
+Classical strict-warning reference,Step 5 / 5Q,Alternative risk-governance policy,Continuous classical optimization with warning limits hardened,100%,44,44,10,27.0%,44.6%,26.5%,28.1%,79.8%,25.0%,0,3.39e-21
+Classical subset baseline: greedy,Step 5 / 5Q,Classical active-set benchmark,Greedy active-set selection plus continuous refinement,90%,48,47,4,23.3%,40.4%,21.6%,23.7%,100.0%,21.9%,0,2.78e-17
+Classical subset baseline: local_search,Step 5 / 5Q,Classical active-set benchmark,Local-search active-set selection plus continuous refinement,90%,48,47,4,23.3%,40.4%,21.6%,23.7%,100.0%,21.9%,0,2.78e-17

@@ -1,0 +1,44 @@
+index,candidate,scenario,scenario_loss,warning_threshold,warning_excess,hard_limit,hard_limit_headroom
+0,Baseline | Current portfolio,Global equity selloff,12.9101%,11.4101%,1.5000%,15.4101%,2.5000%
+1,Baseline | Current portfolio,Inflation and rate shock,8.4719%,6.9719%,1.5000%,10.9719%,2.5000%
+2,Baseline | Current portfolio,Credit and liquidity crisis,11.4090%,9.9090%,1.5000%,13.9090%,2.5000%
+3,Baseline | Current portfolio,Commodity supply shock,3.5282%,2.0282%,1.5000%,6.0282%,2.5000%
+4,Baseline | Current portfolio,Broad deleveraging shock,13.8270%,12.3270%,1.5000%,16.3270%,2.5000%
+5,Classical subset baseline: greedy,Commodity supply shock,3.0750%,2.0282%,1.0467%,6.0282%,2.9533%
+6,Classical subset baseline: greedy,Inflation and rate shock,7.6814%,6.9719%,0.7096%,10.9719%,3.2904%
+7,Classical subset baseline: greedy,Credit and liquidity crisis,10.4030%,9.9090%,0.4940%,13.9090%,3.5060%
+8,Classical subset baseline: greedy,Broad deleveraging shock,12.7160%,12.3270%,0.3890%,16.3270%,3.6110%
+9,Classical subset baseline: greedy,Global equity selloff,11.4143%,11.4101%,0.0042%,15.4101%,3.9958%
+10,Classical subset baseline: local_search,Commodity supply shock,3.0750%,2.0282%,1.0467%,6.0282%,2.9533%
+11,Classical subset baseline: local_search,Inflation and rate shock,7.6814%,6.9719%,0.7096%,10.9719%,3.2904%
+12,Classical subset baseline: local_search,Credit and liquidity crisis,10.4030%,9.9090%,0.4940%,13.9090%,3.5060%
+13,Classical subset baseline: local_search,Broad deleveraging shock,12.7160%,12.3270%,0.3890%,16.3270%,3.6110%
+14,Classical subset baseline: local_search,Global equity selloff,11.4143%,11.4101%,0.0042%,15.4101%,3.9958%
+15,Classical-target-recovery exact audit,Commodity supply shock,3.0715%,2.0282%,1.0433%,6.0282%,2.9567%
+16,Classical-target-recovery exact audit,Inflation and rate shock,7.6858%,6.9719%,0.7140%,10.9719%,3.2860%
+17,Classical-target-recovery exact audit,Credit and liquidity crisis,10.4127%,9.9090%,0.5037%,13.9090%,3.4963%
+18,Classical-target-recovery exact audit,Broad deleveraging shock,12.7113%,12.3270%,0.3843%,16.3270%,3.6157%
+19,Classical-target-recovery exact audit,Global equity selloff,11.4177%,11.4101%,0.0077%,15.4101%,3.9923%
+20,Independent Qiskit QAOA,Commodity supply shock,3.0750%,2.0282%,1.0467%,6.0282%,2.9533%
+21,Independent Qiskit QAOA,Inflation and rate shock,7.6814%,6.9719%,0.7096%,10.9719%,3.2904%
+22,Independent Qiskit QAOA,Credit and liquidity crisis,10.4030%,9.9090%,0.4940%,13.9090%,3.5060%
+23,Independent Qiskit QAOA,Broad deleveraging shock,12.7160%,12.3270%,0.3890%,16.3270%,3.6110%
+24,Independent Qiskit QAOA,Global equity selloff,11.4143%,11.4101%,0.0042%,15.4101%,3.9958%
+25,Independent exact active-set benchmark,Commodity supply shock,3.0750%,2.0282%,1.0467%,6.0282%,2.9533%
+26,Independent exact active-set benchmark,Inflation and rate shock,7.6814%,6.9719%,0.7096%,10.9719%,3.2904%
+27,Independent exact active-set benchmark,Credit and liquidity crisis,10.4030%,9.9090%,0.4940%,13.9090%,3.5060%
+28,Independent exact active-set benchmark,Broad deleveraging shock,12.7160%,12.3270%,0.3890%,16.3270%,3.6110%
+29,Independent exact active-set benchmark,Global equity selloff,11.4143%,11.4101%,0.0042%,15.4101%,3.9958%
+30,Primary unrestricted classical,Commodity supply shock,3.0715%,2.0282%,1.0433%,6.0282%,2.9567%
+31,Primary unrestricted classical,Inflation and rate shock,7.6858%,6.9719%,0.7140%,10.9719%,3.2860%
+32,Primary unrestricted classical,Credit and liquidity crisis,10.4127%,9.9090%,0.5037%,13.9090%,3.4963%
+33,Primary unrestricted classical,Broad deleveraging shock,12.7113%,12.3270%,0.3843%,16.3270%,3.6157%
+34,Primary unrestricted classical,Global equity selloff,11.4177%,11.4101%,0.0077%,15.4101%,3.9923%
+35,Step 4 | 02_mean_variance,Commodity supply shock,2.0974%,2.0282%,0.0692%,6.0282%,3.9308%
+36,Step 4 | 03_asset_caps,Commodity supply shock,3.6971%,2.0282%,1.6688%,6.0282%,2.3312%
+37,Step 4 | 03_asset_caps,Inflation and rate shock,7.6494%,6.9719%,0.6776%,10.9719%,3.3224%
+38,Step 4 | 04_guardrails,Commodity supply shock,3.6852%,2.0282%,1.6570%,6.0282%,2.3430%
+39,Step 4 | 04_guardrails,Inflation and rate shock,7.9881%,6.9719%,1.0162%,10.9719%,2.9838%
+40,Step 4 | 05_trading_costs,Commodity supply shock,3.2406%,2.0282%,1.2124%,6.0282%,2.7876%
+41,Step 4 | 05_trading_costs,Inflation and rate shock,7.2748%,6.9719%,0.3030%,10.9719%,3.6970%
+42,Step 4 | 06_scenario_aware,Commodity supply shock,2.1436%,2.0282%,0.1154%,6.0282%,3.8846%

@@ -1,0 +1,4 @@
+candidate,forward_paths,forward_median_return,forward_return_05,forward_median_volatility,forward_median_maximum_drawdown,forward_drawdown_95,forward_loss_path_frequency,evidence_tier,ranking_treatment
+Classical strict-warning reference,1000,5.72%,-2.66%,7.51%,7.95%,13.96%,13.5%,FINAL_EVIDENCE,separate_validation_not_scored
+Primary unrestricted classical,1000,5.74%,-3.15%,7.86%,8.48%,14.91%,14.1%,FINAL_EVIDENCE,separate_validation_not_scored
+Independent Qiskit QAOA,1000,5.70%,-3.19%,7.87%,8.49%,14.93%,14.6%,FINAL_EVIDENCE,separate_validation_not_scored

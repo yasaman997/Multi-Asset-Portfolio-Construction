@@ -1,0 +1,4 @@
+marker_number,candidate,short_label
+1,Classical strict-warning reference,Strict warning
+2,Primary unrestricted classical,Primary classical
+3,Independent Qiskit QAOA,QAOA

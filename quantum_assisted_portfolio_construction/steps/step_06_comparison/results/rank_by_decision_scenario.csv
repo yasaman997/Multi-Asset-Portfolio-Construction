@@ -1,0 +1,4 @@
+candidate,Balanced,Return First,Risk First,Implementation First,Governance First,Explainability First
+Primary unrestricted classical,0.567,0.663,0.387,0.655,0.483,0.599
+Independent Qiskit QAOA,0.263,0.161,0.163,0.511,0.176,0.37
+Classical strict-warning reference,0.675,0.76,0.789,0.453,0.722,0.648

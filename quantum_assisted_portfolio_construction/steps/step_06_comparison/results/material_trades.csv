@@ -1,0 +1,33 @@
+index,candidate,ticker,asset_class,current_weight,weight,trade,absolute_trade
+0,Primary unrestricted classical,SGOV,Cash,1.43%,7.97%,+6.55%,6.55%
+1,Primary unrestricted classical,VUG,US Equity,2.37%,0.00%,-2.37%,2.37%
+2,Primary unrestricted classical,QQQ,US Equity,2.06%,0.00%,-2.06%,2.06%
+3,Primary unrestricted classical,MTUM,US Equity,2.26%,1.15%,-1.12%,1.12%
+4,Primary unrestricted classical,FXE,FX,0.51%,0.00%,-0.51%,0.51%
+5,Primary unrestricted classical,UUP,FX,0.49%,0.00%,-0.49%,0.49%
+6,Independent Qiskit QAOA,SGOV,Cash,1.43%,6.96%,+5.53%,5.53%
+7,Independent Qiskit QAOA,VUG,US Equity,2.37%,0.00%,-2.37%,2.37%
+8,Independent Qiskit QAOA,QQQ,US Equity,2.06%,0.00%,-2.06%,2.06%
+9,Independent Qiskit QAOA,MTUM,US Equity,2.26%,1.16%,-1.10%,1.10%
+10,Independent exact active-set benchmark,SGOV,Cash,1.43%,6.96%,+5.53%,5.53%
+11,Independent exact active-set benchmark,VUG,US Equity,2.37%,0.00%,-2.37%,2.37%
+12,Independent exact active-set benchmark,QQQ,US Equity,2.06%,0.00%,-2.06%,2.06%
+13,Independent exact active-set benchmark,MTUM,US Equity,2.26%,1.16%,-1.10%,1.10%
+14,Classical strict-warning reference,SGOV,Cash,1.43%,10.19%,+8.76%,8.76%
+15,Classical strict-warning reference,XLE,Real-Asset Sectors,1.00%,4.18%,+3.18%,3.18%
+16,Classical strict-warning reference,SPY,US Equity,2.48%,0.00%,-2.48%,2.48%
+17,Classical strict-warning reference,VUG,US Equity,2.37%,0.00%,-2.37%,2.37%
+18,Classical strict-warning reference,MTUM,US Equity,2.26%,0.00%,-2.26%,2.26%
+19,Classical strict-warning reference,QQQ,US Equity,2.06%,0.00%,-2.06%,2.06%
+20,Classical strict-warning reference,EWC,Developed Equity,1.89%,0.67%,-1.23%,1.23%
+21,Classical strict-warning reference,VGK,Developed Equity,1.98%,1.46%,-0.51%,0.51%
+22,Classical strict-warning reference,FXE,FX,0.51%,0.00%,-0.51%,0.51%
+23,Classical strict-warning reference,UUP,FX,0.49%,0.00%,-0.49%,0.49%
+24,Classical subset baseline: greedy,SGOV,Cash,1.43%,6.96%,+5.53%,5.53%
+25,Classical subset baseline: greedy,VUG,US Equity,2.37%,0.00%,-2.37%,2.37%
+26,Classical subset baseline: greedy,QQQ,US Equity,2.06%,0.00%,-2.06%,2.06%
+27,Classical subset baseline: greedy,MTUM,US Equity,2.26%,1.16%,-1.10%,1.10%
+28,Classical subset baseline: local_search,SGOV,Cash,1.43%,6.96%,+5.53%,5.53%
+29,Classical subset baseline: local_search,VUG,US Equity,2.37%,0.00%,-2.37%,2.37%
+30,Classical subset baseline: local_search,QQQ,US Equity,2.06%,0.00%,-2.06%,2.06%
+31,Classical subset baseline: local_search,MTUM,US Equity,2.26%,1.16%,-1.10%,1.10%

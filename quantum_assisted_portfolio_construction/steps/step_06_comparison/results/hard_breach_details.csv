@@ -1,0 +1,27 @@
+index,candidate,category,constraint,value,lower,upper,absolute_violation,normalized_violation
+0,Step 4 | 01_minimum_variance,asset_class,class_Cash,0.976755,0.01,0.15,82.6755%,84.64%
+1,Step 4 | 02_mean_variance,asset_class,class_Cash,0.649505,0.01,0.15,49.9505%,76.91%
+2,Step 4 | 02_mean_variance,asset,weight_SGOV,0.649505,0.0,0.15,49.9505%,76.91%
+3,Step 4 | 01_minimum_variance,trading,gross_turnover,1.905944,-inf,0.5,140.5944%,73.77%
+4,Step 4 | 02_mean_variance,trading,gross_turnover,1.780234,-inf,0.5,128.0234%,71.91%
+5,Step 4 | 01_minimum_variance,asset,weight_SGOV,0.508836,0.0,0.15,35.8836%,70.52%
+6,Step 4 | 01_minimum_variance,asset,weight_BIL,0.46792,0.0,0.15,31.7920%,67.94%
+7,Step 4 | 03_asset_caps,trading,gross_turnover,1.334085,-inf,0.5,83.4085%,62.52%
+8,Step 4 | 04_guardrails,trading,gross_turnover,1.105986,-inf,0.5,60.5986%,54.79%
+9,Step 4 | 02_mean_variance,asset,weight_MUB,0.179158,0.0,0.1,7.9158%,44.18%
+10,Step 4 | 03_asset_caps,asset_class,class_Preferred,0.081796,0.0,0.05,3.1796%,38.87%
+11,Step 4 | 01_minimum_variance,factor,factor_Equity,0.009039,0.263599,0.663599,25.4559%,38.36%
+12,Step 4 | 01_minimum_variance,asset_class,class_US Equity,0.002049,0.15,0.4,14.7951%,36.99%
+13,Step 4 | 01_minimum_variance,asset_class,class_Core Bonds,0.0,0.08,0.25,8.0000%,32.00%
+14,Step 4 | 02_mean_variance,asset_class,class_Core Bonds,0.0,0.08,0.25,8.0000%,32.00%
+15,Step 4 | 02_mean_variance,asset_class,class_US Equity,0.042957,0.15,0.4,10.7043%,26.76%
+16,Step 4 | 01_minimum_variance,asset_class,class_Developed Equity,0.000678,0.05,0.2,4.9322%,24.66%
+17,Step 4 | 01_minimum_variance,asset_class,class_Government Bonds,0.0,0.05,0.25,5.0000%,20.00%
+18,Step 4 | 02_mean_variance,asset_class,class_Government Bonds,0.0,0.05,0.25,5.0000%,20.00%
+19,Step 4 | 01_minimum_variance,asset_class,class_Credit,0.000883,0.03,0.18,2.9117%,16.18%
+20,Step 4 | 03_asset_caps,asset_class,class_Cash,0.177771,0.01,0.15,2.7771%,15.62%
+21,Step 4 | 03_asset_caps,asset_class,class_US Equity,0.090175,0.15,0.4,5.9825%,14.96%
+22,Step 4 | 02_mean_variance,factor,factor_Equity,0.167824,0.263599,0.663599,9.5775%,14.43%
+23,Step 4 | 01_minimum_variance,return,return_floor,0.040806,0.045451,inf,0.4645%,10.22%
+24,Step 4 | 01_minimum_variance,factor,factor_Credit,-0.01379,0.00385,0.30385,1.7640%,5.81%
+25,Step 4 | 01_minimum_variance,factor,factor_Duration,0.046484,0.048656,0.448656,0.2172%,0.48%

@@ -1,0 +1,7 @@
+index,expected_return_score,risk_control_score,implementation_score,guardrail_resilience_score,explainability_score
+Balanced,25%,25%,20%,20%,10%
+Return First,45%,20%,10%,15%,10%
+Risk First,15%,45%,10%,20%,10%
+Implementation First,15%,15%,45%,15%,10%
+Governance First,15%,20%,10%,45%,10%
+Explainability First,15%,15%,15%,15%,40%
