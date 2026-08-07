@@ -1,0 +1,7 @@
+stage,return_pct,volatility_pct,gross_turnover_pct,hard_breaches
+Minimum variance,4.08,0.45,190.59,13
+Mean variance,5.73,3.81,178.02,8
+Asset caps,5.82,5.93,133.41,4
+Guardrails,5.8,5.97,110.6,1
+Trading costs,5.44,6.0,50.0,0
+Scenario aware,5.38,5.94,50.0,0
