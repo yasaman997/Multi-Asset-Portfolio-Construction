@@ -1,0 +1,12 @@
+index,category,constraint,value,lower,upper,lower_slack,upper_slack,satisfied
+0,budget,full_investment,1.000000e+00,1.000000,1.000000,-7.771561e-16,7.771561e-16,True
+1,asset,minimum_weight,2.749696e-15,0.000000,inf,2.749696e-15,,True
+2,asset,weight_SPY,2.484007e-02,0.024840,0.024840,0.000000e+00,0.000000e+00,True
+3,asset,weight_QQQ,2.749696e-15,0.000000,0.100000,2.749696e-15,1.000000e-01,True
+4,asset,weight_IWM,2.014312e-02,0.020143,0.020143,0.000000e+00,0.000000e+00,True
+...,...,...,...,...,...,...,...,...
+127,scenario,scenario_Global equity selloff,1.141428e-01,-inf,0.154101,,3.995780e-02,True
+128,scenario,scenario_Inflation and rate shock,7.681432e-02,-inf,0.109719,,3.290446e-02,True
+129,scenario,scenario_Credit and liquidity crisis,1.040301e-01,-inf,0.139090,,3.506022e-02,True
+130,scenario,scenario_Commodity supply shock,3.074958e-02,-inf,0.060282,,2.953263e-02,True
+131,scenario,scenario_Broad deleveraging shock,1.271595e-01,-inf,0.163270,,3.611046e-02,True

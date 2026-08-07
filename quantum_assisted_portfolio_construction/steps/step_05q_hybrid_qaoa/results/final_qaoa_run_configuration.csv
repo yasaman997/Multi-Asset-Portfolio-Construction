@@ -1,0 +1,43 @@
+parameter,value
+run_mode,final
+data_source,synthetic
+step4_cost_scenario,base
+risk_policy,soft_warning
+selection_mode,active_rebalance
+selection_objective,incumbent_marginal_utility
+qubits,11
+cardinality,6
+feasible_supports,462
+qaoa_reps,2
+shots,1024
+maxiter,60
+independent_seeds,20
+declared_seed_start,20260804
+declared_seed_end,20260823
+top_quantum_samples,30
+maximum_subsets_to_refine,15
+exact_candidates_to_refine,16
+qaoa_aggregation,0.25
+active_balance_strength,1.0
+material_incumbent_weight,0.015
+scenario_proxy_share,0.35
+class_balance_strength,0.0
+selected_minimum_weight,0.0
+exact_enumeration_limit,20000
+run_numpy_exact_eigensolver,False
+retain_raw_qiskit_objects,False
+initial_point,"random uniform [-pi, pi] per seed"
+callback_checkpoint_interval,5
+trade_materiality_floor,0.0005
+trade_materiality_fraction,0.01
+marginal_transfer_size,0.0025
+marginal_improvement_fraction,0.05
+inferred_cardinality_cap,6
+transpiler_optimization_level,2
+use_cardinality_preserving_mixer,True
+executed_trade_threshold,1e-05
+mixer,XY ring
+initial_state,fixed-cardinality Dicke
+classical_angle_optimizer,COBYLA
+backend,Qiskit Aer statevector simulator
+aer_precision,single

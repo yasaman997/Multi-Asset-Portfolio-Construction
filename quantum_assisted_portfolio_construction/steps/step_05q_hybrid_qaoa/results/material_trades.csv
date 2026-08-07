@@ -1,0 +1,7 @@
+index,current_weight,hybrid_weight,trade,absolute_trade,qaoa_active_candidate,trade_executed
+SGOV,1.43%,6.96%,+5.53%,5.53%,True,True
+VUG,2.37%,0.00%,-2.37%,2.37%,True,True
+QQQ,2.06%,0.00%,-2.06%,2.06%,True,True
+MTUM,2.26%,1.16%,-1.10%,1.10%,True,True
+SHY,3.40%,3.40%,-0.00%,0.00%,True,False
+BIL,1.57%,1.57%,-0.00%,0.00%,True,False

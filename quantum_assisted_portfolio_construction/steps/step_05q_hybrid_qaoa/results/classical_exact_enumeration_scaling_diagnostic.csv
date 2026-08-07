@@ -1,0 +1,8 @@
+instance_type,n_binary_variables,cardinality,feasible_supports,local_cpu_enumeration_seconds,supports_per_second,benchmark_note
+synthetic scaling diagnostic,8,4,70,0.0002965620005852543,236038.3321594053,environment-specific CPU diagnostic; not comparable to original Colab QAOA wall time
+synthetic scaling diagnostic,10,5,252,0.0010236429989163298,246179.5765386736,environment-specific CPU diagnostic; not comparable to original Colab QAOA wall time
+actual final active-rebalance QUBO,11,6,462,0.001814251001633238,254650.54150946866,"release-side CPU rerun of actual 11/6 QUBO; different environment from original Colab QAOA, so not a direct speed comparison"
+synthetic scaling diagnostic,12,6,924,0.0035961920002591796,256938.45043129142,environment-specific CPU diagnostic; not comparable to original Colab QAOA wall time
+synthetic scaling diagnostic,14,7,3432,0.01374636000036844,249666.09341731286,environment-specific CPU diagnostic; not comparable to original Colab QAOA wall time
+synthetic scaling diagnostic,16,8,12870,0.056420345998049015,228109.2001889715,environment-specific CPU diagnostic; not comparable to original Colab QAOA wall time
+synthetic scaling diagnostic,18,9,48620,0.19885789999898407,244496.195525792,environment-specific CPU diagnostic; not comparable to original Colab QAOA wall time

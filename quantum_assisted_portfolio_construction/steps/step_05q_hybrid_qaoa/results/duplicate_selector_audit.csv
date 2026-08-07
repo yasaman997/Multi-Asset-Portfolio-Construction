@@ -1,0 +1,6 @@
+index,selector,source_selector,selected_tickers,normalized_objective,qubo_energy
+0,random_best,random_018,"QQQ, VUG, VGK, EWC, EEM, SGOV",-0.798047,6.470837
+1,greedy,greedy,"QQQ, VUG, MTUM, SHY, BIL, SGOV",-0.798818,-4.067965
+2,local_search,local_search,"QQQ, VUG, MTUM, SHY, BIL, SGOV",-0.798818,-4.067965
+3,qaoa,qaoa,"QQQ, VUG, MTUM, SHY, BIL, SGOV",-0.798818,-4.067965
+4,exact_enumeration,exact_enumeration,"QQQ, VUG, MTUM, SHY, BIL, SGOV",-0.798818,-4.067965

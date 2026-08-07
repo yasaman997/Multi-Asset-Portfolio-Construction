@@ -1,0 +1,8 @@
+index,value
+seed_count,20.0
+exact_optimum_hit_rate,0.75
+median_qubo_energy_gap,0.0
+worst_qubo_energy_gap,0.083637
+median_financial_objective,-0.798818
+worst_financial_objective,-0.798047
+median_runtime_seconds,1.918267

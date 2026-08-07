@@ -1,0 +1,8 @@
+index,value
+selection_objective,classical_target_recovery
+qubits,11
+cardinality,6
+exact_qubo_energy,-1.212018
+continuous_objective,-0.799788
+classical_objective,-0.799788
+executed_trades,6

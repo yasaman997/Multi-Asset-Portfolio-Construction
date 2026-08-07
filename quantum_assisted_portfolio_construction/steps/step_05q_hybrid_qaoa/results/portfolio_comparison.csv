@@ -1,0 +1,6 @@
+profile,expected_total_return,growth,income,volatility,worst_scenario_loss,gross_turnover,total_trading_cost,effective_holdings,nonzero_holdings,active_candidates,executed_trades,normalized_objective,objective_gap_to_primary_classical
+Primary unrestricted classical,5.49%,2.90%,2.59%,7.86%,12.71%,13.09%,0.0020%,33.73,46,,6,-0.799788,0.0
+Independent Qiskit QAOA,5.45%,2.90%,2.56%,7.87%,12.72%,11.06%,0.0015%,35.48,48,6.0,4,-0.798818,0.00097
+Independent exact active-set benchmark,5.45%,2.90%,2.56%,7.87%,12.72%,11.06%,0.0015%,35.48,48,6.0,4,-0.798818,0.00097
+Classical-target-recovery exact audit,5.49%,2.90%,2.59%,7.86%,12.71%,13.09%,0.0020%,33.73,46,6.0,6,-0.799788,-0.0
+Classical strict-warning,5.48%,2.82%,2.67%,7.51%,12.17%,23.88%,0.0056%,29.35,44,,11,-0.782684,0.017104

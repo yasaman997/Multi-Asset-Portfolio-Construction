@@ -1,0 +1,5 @@
+profile,paths,median_return,return_05,median_volatility,median_maximum_drawdown,drawdown_95,loss_path_frequency
+Independent QAOA,1000,5.70%,-3.19%,7.87%,8.49%,14.93%,14.6%
+Independent exact active set,1000,5.70%,-3.19%,7.87%,8.49%,14.93%,14.6%
+Primary classical,1000,5.74%,-3.15%,7.86%,8.48%,14.91%,14.1%
+Strict-warning classical,1000,5.72%,-2.66%,7.51%,7.95%,13.96%,13.5%

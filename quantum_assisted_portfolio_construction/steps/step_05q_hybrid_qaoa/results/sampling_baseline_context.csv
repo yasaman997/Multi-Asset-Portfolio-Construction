@@ -1,0 +1,4 @@
+quantity,value,interpretation
+exact_support_best_run_probability,0.000977,stored selected-run probability of the exact reduced-QUBO support
+uniform_single_support_probability,0.0021645021645021645,1/462 reference under uniform sampling over the feasible support manifold
+uniform_probability_see_predesignated_support_at_least_once_in_1024_draws,0.8912661840710877,analytical reference only; not an algorithmically matched QAOA performance baseline
