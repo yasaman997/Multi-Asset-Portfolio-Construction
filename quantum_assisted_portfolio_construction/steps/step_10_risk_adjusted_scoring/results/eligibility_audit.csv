@@ -1,0 +1,14 @@
+portfolio,role,hard_breaches,unique_portfolio,challenge_candidate,independent_validation,forward_evidence,expected_return_pct,volatility_pct,worst_stress_pct,maximum_drawdown_pct,gross_turnover_pct,trading_cost_pct,soft_warning_breaches,evidence_precision,forward_return_05_pct,forward_drawdown_95_pct,forward_loss_frequency_pct,zero_breach_screen_eligible,fully_certified_eligible
+Step 4 | Minimum variance,diagnostic,13,True,True,NOT_RUN,False,4.0806,0.4468,0.051,,190.5944,,,pipeline stage metrics,,,,False,False
+Step 4 | Mean variance,diagnostic,8,True,True,NOT_RUN,False,5.7308,3.8076,6.4595,,178.0234,,,pipeline stage metrics,,,,False,False
+Step 4 | Asset caps,diagnostic,4,True,True,NOT_RUN,False,5.8232,5.9299,10.6261,,133.4085,,,pipeline stage metrics,,,,False,False
+Step 4 | Guardrails,diagnostic,1,True,True,NOT_RUN,False,5.8032,5.9735,10.8791,,110.5986,,,pipeline stage metrics,,,,False,False
+Step 4 | Trading costs,zero-breach Step 4 candidate,0,True,True,PENDING_STEP7,False,5.439,6.0034,10.4774,5.56,50.0,0.0198,2.0,full stage metrics; drawdown and cost use displayed precision,,,,True,False
+Step 4 | Scenario aware,zero-breach Step 4 candidate,0,True,True,PENDING_STEP7,False,5.378,5.9354,10.3633,5.24,50.0,0.0195,1.0,full stage metrics; drawdown and cost use displayed precision,,,,True,False
+Current strategic portfolio,baseline,0,True,False,BASELINE_ONLY,False,5.5451,8.8228,13.827,8.06,0.0,0.0,5.0,pipeline evidence,,,,False,False
+Primary unrestricted classical,certified candidate,0,True,True,PASS,True,5.4896,7.8614,12.7113,7.112,13.0914,0.002,5.0,full pipeline evidence,-3.15,14.91,14.1,True,True
+Strict-warning classical,certified candidate,0,True,True,PASS,True,5.48425,7.505928,12.16857,6.531141,23.88458,0.005553709,0.0,full pipeline evidence,-2.66,13.96,13.5,True,True
+Independent Qiskit QAOA,certified candidate,0,True,True,PASS,True,5.45,7.87,12.71595,7.13,11.06,0.0015,5.0,full stress audit; other fields use displayed precision,-3.19,14.93,14.6,True,True
+Independent exact active-set benchmark,duplicate benchmark,0,False,False,PASS,True,5.45,7.87,12.71595,7.13,11.06,0.0015,5.0,duplicate of QAOA weights,,,,False,False
+Greedy active-set baseline,duplicate benchmark,0,False,False,DUPLICATE_OF_QAOA,False,5.45,7.87,12.71595,7.13,11.06,0.0015,5.0,duplicate of QAOA weights,,,,False,False
+Local-search active-set baseline,duplicate benchmark,0,False,False,DUPLICATE_OF_QAOA,False,5.45,7.87,12.71595,7.13,11.06,0.0015,5.0,duplicate of QAOA weights,,,,False,False

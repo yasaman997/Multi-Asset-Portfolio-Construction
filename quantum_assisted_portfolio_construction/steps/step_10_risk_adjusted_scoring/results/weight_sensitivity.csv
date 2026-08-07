@@ -1,0 +1,133 @@
+universe,weight_return_to_volatility,weight_return_to_stress,weight_return_to_drawdown,winner,winner_score
+all_unique_zero_breach,0.0,0.0,1.0,Step 4 | Scenario aware,100.0
+all_unique_zero_breach,0.0,0.1,0.9,Step 4 | Scenario aware,99.99685769051402
+all_unique_zero_breach,0.0,0.2,0.8,Step 4 | Scenario aware,99.99371538102804
+all_unique_zero_breach,0.0,0.3,0.7,Step 4 | Scenario aware,99.99057307154204
+all_unique_zero_breach,0.0,0.4,0.6,Step 4 | Scenario aware,99.98743076205608
+all_unique_zero_breach,0.0,0.5,0.5,Step 4 | Scenario aware,99.98428845257008
+all_unique_zero_breach,0.0,0.6,0.4,Step 4 | Scenario aware,99.9811461430841
+all_unique_zero_breach,0.0,0.7,0.3,Step 4 | Scenario aware,99.97800383359812
+all_unique_zero_breach,0.0,0.8,0.2,Step 4 | Scenario aware,99.97486152411214
+all_unique_zero_breach,0.0,0.9,0.1,Step 4 | Scenario aware,99.97171921462615
+all_unique_zero_breach,0.0,1.0,0.0,Step 4 | Trading costs,100.0
+all_unique_zero_breach,0.1,0.0,0.9,Step 4 | Scenario aware,100.0
+all_unique_zero_breach,0.1,0.1,0.8,Step 4 | Scenario aware,99.99685769051403
+all_unique_zero_breach,0.1,0.2,0.7,Step 4 | Scenario aware,99.99371538102804
+all_unique_zero_breach,0.1,0.3,0.6,Step 4 | Scenario aware,99.99057307154204
+all_unique_zero_breach,0.1,0.4,0.5,Step 4 | Scenario aware,99.98743076205608
+all_unique_zero_breach,0.1,0.5,0.4,Step 4 | Scenario aware,99.9842884525701
+all_unique_zero_breach,0.1,0.6,0.3,Step 4 | Scenario aware,99.98114614308409
+all_unique_zero_breach,0.1,0.7,0.2,Step 4 | Scenario aware,99.97800383359812
+all_unique_zero_breach,0.1,0.8,0.1,Step 4 | Scenario aware,99.97486152411213
+all_unique_zero_breach,0.1,0.9,0.0,Step 4 | Trading costs,99.99872573219363
+all_unique_zero_breach,0.2,0.0,0.8,Step 4 | Scenario aware,100.0
+all_unique_zero_breach,0.2,0.1,0.7,Step 4 | Scenario aware,99.996857690514
+all_unique_zero_breach,0.2,0.2,0.6,Step 4 | Scenario aware,99.99371538102804
+all_unique_zero_breach,0.2,0.3,0.5,Step 4 | Scenario aware,99.99057307154204
+all_unique_zero_breach,0.2,0.4,0.4,Step 4 | Scenario aware,99.98743076205608
+all_unique_zero_breach,0.2,0.5,0.3,Step 4 | Scenario aware,99.98428845257008
+all_unique_zero_breach,0.2,0.6,0.2,Step 4 | Scenario aware,99.98114614308409
+all_unique_zero_breach,0.2,0.7,0.1,Step 4 | Scenario aware,99.97800383359811
+all_unique_zero_breach,0.2,0.8,0.0,Step 4 | Trading costs,99.99745146438728
+all_unique_zero_breach,0.3,0.0,0.7,Step 4 | Scenario aware,100.0
+all_unique_zero_breach,0.3,0.1,0.6,Step 4 | Scenario aware,99.996857690514
+all_unique_zero_breach,0.3,0.2,0.5,Step 4 | Scenario aware,99.99371538102804
+all_unique_zero_breach,0.3,0.3,0.4,Step 4 | Scenario aware,99.99057307154206
+all_unique_zero_breach,0.3,0.4,0.3,Step 4 | Scenario aware,99.98743076205608
+all_unique_zero_breach,0.3,0.5,0.2,Step 4 | Scenario aware,99.98428845257008
+all_unique_zero_breach,0.3,0.6,0.1,Step 4 | Scenario aware,99.9811461430841
+all_unique_zero_breach,0.3,0.7,0.0,Step 4 | Trading costs,99.99617719658092
+all_unique_zero_breach,0.4,0.0,0.6,Step 4 | Scenario aware,100.0
+all_unique_zero_breach,0.4,0.1,0.5,Step 4 | Scenario aware,99.99685769051402
+all_unique_zero_breach,0.4,0.2,0.4,Step 4 | Scenario aware,99.99371538102804
+all_unique_zero_breach,0.4,0.3,0.3,Step 4 | Scenario aware,99.99057307154204
+all_unique_zero_breach,0.4,0.4,0.2,Step 4 | Scenario aware,99.98743076205608
+all_unique_zero_breach,0.4,0.5,0.1,Step 4 | Scenario aware,99.9842884525701
+all_unique_zero_breach,0.4,0.6,0.0,Step 4 | Trading costs,99.99490292877455
+all_unique_zero_breach,0.5,0.0,0.5,Step 4 | Scenario aware,100.0
+all_unique_zero_breach,0.5,0.1,0.4,Step 4 | Scenario aware,99.99685769051402
+all_unique_zero_breach,0.5,0.2,0.3,Step 4 | Scenario aware,99.99371538102804
+all_unique_zero_breach,0.5,0.3,0.2,Step 4 | Scenario aware,99.99057307154204
+all_unique_zero_breach,0.5,0.4,0.1,Step 4 | Scenario aware,99.98743076205606
+all_unique_zero_breach,0.5,0.5,0.0,Step 4 | Trading costs,99.9936286609682
+all_unique_zero_breach,0.6,0.0,0.4,Step 4 | Scenario aware,100.0
+all_unique_zero_breach,0.6,0.1,0.3,Step 4 | Scenario aware,99.996857690514
+all_unique_zero_breach,0.6,0.2,0.2,Step 4 | Scenario aware,99.99371538102804
+all_unique_zero_breach,0.6,0.3,0.1,Step 4 | Scenario aware,99.99057307154204
+all_unique_zero_breach,0.6,0.4,0.0,Step 4 | Trading costs,99.99235439316185
+all_unique_zero_breach,0.7,0.0,0.3,Step 4 | Scenario aware,100.0
+all_unique_zero_breach,0.7,0.1,0.2,Step 4 | Scenario aware,99.996857690514
+all_unique_zero_breach,0.7,0.2,0.1,Step 4 | Scenario aware,99.99371538102803
+all_unique_zero_breach,0.7,0.3,0.0,Step 4 | Trading costs,99.99108012535547
+all_unique_zero_breach,0.8,0.0,0.2,Step 4 | Scenario aware,100.0
+all_unique_zero_breach,0.8,0.1,0.1,Step 4 | Scenario aware,99.99685769051402
+all_unique_zero_breach,0.8,0.2,0.0,Step 4 | Scenario aware,99.99371538102804
+all_unique_zero_breach,0.9,0.0,0.1,Step 4 | Scenario aware,100.0
+all_unique_zero_breach,0.9,0.1,0.0,Step 4 | Scenario aware,99.99685769051402
+all_unique_zero_breach,1.0,0.0,0.0,Step 4 | Scenario aware,100.0
+fully_certified_shortlist,0.0,0.0,1.0,Strict-warning classical,100.0
+fully_certified_shortlist,0.0,0.1,0.9,Strict-warning classical,100.0
+fully_certified_shortlist,0.0,0.2,0.8,Strict-warning classical,100.0
+fully_certified_shortlist,0.0,0.3,0.7,Strict-warning classical,100.0
+fully_certified_shortlist,0.0,0.4,0.6,Strict-warning classical,100.0
+fully_certified_shortlist,0.0,0.5,0.5,Strict-warning classical,100.0
+fully_certified_shortlist,0.0,0.6,0.4,Strict-warning classical,100.0
+fully_certified_shortlist,0.0,0.7,0.3,Strict-warning classical,100.0
+fully_certified_shortlist,0.0,0.8,0.2,Strict-warning classical,100.0
+fully_certified_shortlist,0.0,0.9,0.1,Strict-warning classical,100.0
+fully_certified_shortlist,0.0,1.0,0.0,Strict-warning classical,100.0
+fully_certified_shortlist,0.1,0.0,0.9,Strict-warning classical,100.0
+fully_certified_shortlist,0.1,0.1,0.8,Strict-warning classical,100.0
+fully_certified_shortlist,0.1,0.2,0.7,Strict-warning classical,100.0
+fully_certified_shortlist,0.1,0.3,0.6,Strict-warning classical,100.0
+fully_certified_shortlist,0.1,0.4,0.5,Strict-warning classical,100.0
+fully_certified_shortlist,0.1,0.5,0.4,Strict-warning classical,100.0
+fully_certified_shortlist,0.1,0.6,0.3,Strict-warning classical,100.0
+fully_certified_shortlist,0.1,0.7,0.2,Strict-warning classical,100.0
+fully_certified_shortlist,0.1,0.8,0.1,Strict-warning classical,100.0
+fully_certified_shortlist,0.1,0.9,0.0,Strict-warning classical,100.0
+fully_certified_shortlist,0.2,0.0,0.8,Strict-warning classical,100.0
+fully_certified_shortlist,0.2,0.1,0.7,Strict-warning classical,100.0
+fully_certified_shortlist,0.2,0.2,0.6,Strict-warning classical,100.0
+fully_certified_shortlist,0.2,0.3,0.5,Strict-warning classical,100.0
+fully_certified_shortlist,0.2,0.4,0.4,Strict-warning classical,100.0
+fully_certified_shortlist,0.2,0.5,0.3,Strict-warning classical,100.0
+fully_certified_shortlist,0.2,0.6,0.2,Strict-warning classical,100.0
+fully_certified_shortlist,0.2,0.7,0.1,Strict-warning classical,99.99999999999999
+fully_certified_shortlist,0.2,0.8,0.0,Strict-warning classical,100.0
+fully_certified_shortlist,0.3,0.0,0.7,Strict-warning classical,100.0
+fully_certified_shortlist,0.3,0.1,0.6,Strict-warning classical,100.0
+fully_certified_shortlist,0.3,0.2,0.5,Strict-warning classical,100.0
+fully_certified_shortlist,0.3,0.3,0.4,Strict-warning classical,100.0
+fully_certified_shortlist,0.3,0.4,0.3,Strict-warning classical,100.0
+fully_certified_shortlist,0.3,0.5,0.2,Strict-warning classical,100.0
+fully_certified_shortlist,0.3,0.6,0.1,Strict-warning classical,99.99999999999999
+fully_certified_shortlist,0.3,0.7,0.0,Strict-warning classical,100.0
+fully_certified_shortlist,0.4,0.0,0.6,Strict-warning classical,100.0
+fully_certified_shortlist,0.4,0.1,0.5,Strict-warning classical,100.0
+fully_certified_shortlist,0.4,0.2,0.4,Strict-warning classical,100.0
+fully_certified_shortlist,0.4,0.3,0.3,Strict-warning classical,100.0
+fully_certified_shortlist,0.4,0.4,0.2,Strict-warning classical,100.0
+fully_certified_shortlist,0.4,0.5,0.1,Strict-warning classical,100.0
+fully_certified_shortlist,0.4,0.6,0.0,Strict-warning classical,100.0
+fully_certified_shortlist,0.5,0.0,0.5,Strict-warning classical,100.0
+fully_certified_shortlist,0.5,0.1,0.4,Strict-warning classical,100.0
+fully_certified_shortlist,0.5,0.2,0.3,Strict-warning classical,100.0
+fully_certified_shortlist,0.5,0.3,0.2,Strict-warning classical,100.0
+fully_certified_shortlist,0.5,0.4,0.1,Strict-warning classical,100.0
+fully_certified_shortlist,0.5,0.5,0.0,Strict-warning classical,100.0
+fully_certified_shortlist,0.6,0.0,0.4,Strict-warning classical,100.0
+fully_certified_shortlist,0.6,0.1,0.3,Strict-warning classical,100.0
+fully_certified_shortlist,0.6,0.2,0.2,Strict-warning classical,100.0
+fully_certified_shortlist,0.6,0.3,0.1,Strict-warning classical,99.99999999999999
+fully_certified_shortlist,0.6,0.4,0.0,Strict-warning classical,100.0
+fully_certified_shortlist,0.7,0.0,0.3,Strict-warning classical,100.0
+fully_certified_shortlist,0.7,0.1,0.2,Strict-warning classical,100.0
+fully_certified_shortlist,0.7,0.2,0.1,Strict-warning classical,99.99999999999999
+fully_certified_shortlist,0.7,0.3,0.0,Strict-warning classical,100.0
+fully_certified_shortlist,0.8,0.0,0.2,Strict-warning classical,100.0
+fully_certified_shortlist,0.8,0.1,0.1,Strict-warning classical,100.0
+fully_certified_shortlist,0.8,0.2,0.0,Strict-warning classical,100.0
+fully_certified_shortlist,0.9,0.0,0.1,Strict-warning classical,100.0
+fully_certified_shortlist,0.9,0.1,0.0,Strict-warning classical,100.0
+fully_certified_shortlist,1.0,0.0,0.0,Strict-warning classical,100.0

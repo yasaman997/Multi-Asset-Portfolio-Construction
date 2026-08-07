@@ -1,0 +1,9 @@
+benchmark_rate_pct,winner,winner_score
+0.0,Step 4 | Scenario aware,99.98952563504672
+1.0,Step 4 | Scenario aware,99.8229020996767
+2.0,Step 4 | Scenario aware,99.55208215054755
+3.0,Step 4 | Scenario aware,99.05737004770711
+3.15,Step 4 | Scenario aware,98.94555621758866
+3.5,Step 4 | Trading costs,99.10756786015901
+4.0,Step 4 | Trading costs,99.48520241591048
+5.0,Step 4 | Trading costs,100.0
