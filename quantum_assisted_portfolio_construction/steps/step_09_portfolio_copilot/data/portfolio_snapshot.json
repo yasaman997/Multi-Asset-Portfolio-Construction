@@ -1,0 +1,624 @@
+{
+  "profiles": {
+    "current": {
+      "label": "Current strategic portfolio",
+      "return": 5.55,
+      "volatility": 8.82,
+      "stress": 13.83,
+      "turnover": 0.0,
+      "cost": 0.0,
+      "drawdown": 8.06,
+      "cvar": 1.12,
+      "effective": 40.14,
+      "warnings": 5,
+      "hard": "PASS",
+      "description": "Incumbent baseline before rebalancing."
+    },
+    "primary": {
+      "label": "Primary unrestricted classical",
+      "return": 5.49,
+      "volatility": 7.86,
+      "stress": 12.71,
+      "turnover": 13.09,
+      "cost": 0.002,
+      "drawdown": 7.11,
+      "cvar": 0.99,
+      "effective": 33.73,
+      "warnings": 5,
+      "hard": "PASS",
+      "description": "Best base-policy continuous objective."
+    },
+    "strict": {
+      "label": "Classical strict-warning",
+      "return": 5.48,
+      "volatility": 7.51,
+      "stress": 12.17,
+      "turnover": 23.88,
+      "cost": 0.0056,
+      "drawdown": 6.53,
+      "cvar": 0.95,
+      "effective": 29.35,
+      "warnings": 0,
+      "hard": "PASS",
+      "description": "Risk-governed alternative with all soft warnings hardened."
+    },
+    "qaoa": {
+      "label": "Hybrid QAOA active-rebalance",
+      "return": 5.45,
+      "volatility": 7.87,
+      "stress": 12.72,
+      "turnover": 11.06,
+      "cost": 0.0015,
+      "drawdown": 7.13,
+      "cvar": 1.0,
+      "effective": 35.48,
+      "warnings": 5,
+      "hard": "PASS",
+      "description": "Recommended hybrid prototype: exact reduced support plus continuous refinement."
+    }
+  },
+  "allocation": [
+    {
+      "ticker": "SGOV",
+      "asset_class": "Cash",
+      "current": 0.0142920105531489,
+      "qaoa": 0.0695682161832917,
+      "trade": 0.0552762056301428
+    },
+    {
+      "ticker": "TIP",
+      "asset_class": "Inflation Linked",
+      "current": 0.05,
+      "qaoa": 0.05,
+      "trade": 0.0
+    },
+    {
+      "ticker": "BWX",
+      "asset_class": "Core Bonds",
+      "current": 0.0397617930964231,
+      "qaoa": 0.0397617930964231,
+      "trade": 0.0
+    },
+    {
+      "ticker": "AGG",
+      "asset_class": "Core Bonds",
+      "current": 0.0368489259335667,
+      "qaoa": 0.0368489259335667,
+      "trade": 0.0
+    },
+    {
+      "ticker": "BNDX",
+      "asset_class": "Core Bonds",
+      "current": 0.0368388888649624,
+      "qaoa": 0.0368388888649624,
+      "trade": 0.0
+    },
+    {
+      "ticker": "BND",
+      "asset_class": "Core Bonds",
+      "current": 0.0365503921050476,
+      "qaoa": 0.0365503921050476,
+      "trade": 0.0
+    },
+    {
+      "ticker": "USMV",
+      "asset_class": "US Equity",
+      "current": 0.0344636104162258,
+      "qaoa": 0.0344636104162258,
+      "trade": 0.0
+    },
+    {
+      "ticker": "TLT",
+      "asset_class": "Government Bonds",
+      "current": 0.0340907176302974,
+      "qaoa": 0.0340907176302974,
+      "trade": 0.0
+    },
+    {
+      "ticker": "SHY",
+      "asset_class": "Government Bonds",
+      "current": 0.0340141721884102,
+      "qaoa": 0.0340141721884102,
+      "trade": 0.0
+    },
+    {
+      "ticker": "IEF",
+      "asset_class": "Government Bonds",
+      "current": 0.0318951101812923,
+      "qaoa": 0.0318951101812923,
+      "trade": 0.0
+    },
+    {
+      "ticker": "QUAL",
+      "asset_class": "US Equity",
+      "current": 0.0271634374570962,
+      "qaoa": 0.0271634374570962,
+      "trade": 0.0
+    },
+    {
+      "ticker": "VTV",
+      "asset_class": "US Equity",
+      "current": 0.0266423890792441,
+      "qaoa": 0.0266423890792441,
+      "trade": 0.0
+    },
+    {
+      "ticker": "SCHD",
+      "asset_class": "US Equity",
+      "current": 0.0263059506914897,
+      "qaoa": 0.0263059506914897,
+      "trade": 0.0
+    },
+    {
+      "ticker": "SPY",
+      "asset_class": "US Equity",
+      "current": 0.0248400681878669,
+      "qaoa": 0.0248400681878669,
+      "trade": 0.0
+    },
+    {
+      "ticker": "DIA",
+      "asset_class": "US Equity",
+      "current": 0.0235162232901702,
+      "qaoa": 0.0235162232901702,
+      "trade": 0.0
+    },
+    {
+      "ticker": "EFA",
+      "asset_class": "Developed Equity",
+      "current": 0.0213318339846337,
+      "qaoa": 0.0213318339846337,
+      "trade": 0.0
+    },
+    {
+      "ticker": "MUB",
+      "asset_class": "Credit",
+      "current": 0.0204147180382795,
+      "qaoa": 0.0204147180382795,
+      "trade": 0.0
+    },
+    {
+      "ticker": "HYG",
+      "asset_class": "Credit",
+      "current": 0.0203394055378323,
+      "qaoa": 0.0203394055378323,
+      "trade": 0.0
+    },
+    {
+      "ticker": "IWM",
+      "asset_class": "US Equity",
+      "current": 0.0201431152477642,
+      "qaoa": 0.0201431152477642,
+      "trade": 0.0
+    },
+    {
+      "ticker": "EMB",
+      "asset_class": "Credit",
+      "current": 0.0200015239635505,
+      "qaoa": 0.0200015239635505,
+      "trade": 0.0
+    },
+    {
+      "ticker": "PFF",
+      "asset_class": "Preferred",
+      "current": 0.02,
+      "qaoa": 0.02,
+      "trade": 0.0
+    },
+    {
+      "ticker": "EWJ",
+      "asset_class": "Developed Equity",
+      "current": 0.0199840845774436,
+      "qaoa": 0.0199840845774436,
+      "trade": 0.0
+    },
+    {
+      "ticker": "EWA",
+      "asset_class": "Developed Equity",
+      "current": 0.0199783004843061,
+      "qaoa": 0.0199783004843061,
+      "trade": 0.0
+    },
+    {
+      "ticker": "VGK",
+      "asset_class": "Developed Equity",
+      "current": 0.0197624093978396,
+      "qaoa": 0.0197624093978396,
+      "trade": 0.0
+    },
+    {
+      "ticker": "LQD",
+      "asset_class": "Credit",
+      "current": 0.0192443524603376,
+      "qaoa": 0.0192443524603376,
+      "trade": 0.0
+    },
+    {
+      "ticker": "EWC",
+      "asset_class": "Developed Equity",
+      "current": 0.0189433715557768,
+      "qaoa": 0.0189433715557768,
+      "trade": 0.0
+    },
+    {
+      "ticker": "GLD",
+      "asset_class": "Precious Metals",
+      "current": 0.01616291457938,
+      "qaoa": 0.01616291457938,
+      "trade": 0.0
+    },
+    {
+      "ticker": "BIL",
+      "asset_class": "Cash",
+      "current": 0.015707989446851,
+      "qaoa": 0.015707989446851,
+      "trade": 0.0
+    },
+    {
+      "ticker": "KMLM",
+      "asset_class": "Alternatives",
+      "current": 0.0152156497924673,
+      "qaoa": 0.0152156497924673,
+      "trade": 0.0
+    },
+    {
+      "ticker": "DBMF",
+      "asset_class": "Alternatives",
+      "current": 0.0147843502075326,
+      "qaoa": 0.0147843502075326,
+      "trade": 0.0
+    },
+    {
+      "ticker": "SLV",
+      "asset_class": "Precious Metals",
+      "current": 0.0138370854206199,
+      "qaoa": 0.0138370854206199,
+      "trade": 0.0
+    },
+    {
+      "ticker": "REET",
+      "asset_class": "Real Estate",
+      "current": 0.0135774757062804,
+      "qaoa": 0.0135774757062804,
+      "trade": 0.0
+    },
+    {
+      "ticker": "REM",
+      "asset_class": "Real Estate",
+      "current": 0.0133021190684334,
+      "qaoa": 0.0133021190684334,
+      "trade": 0.0
+    },
+    {
+      "ticker": "VNQ",
+      "asset_class": "Real Estate",
+      "current": 0.013120405225286,
+      "qaoa": 0.013120405225286,
+      "trade": 0.0
+    },
+    {
+      "ticker": "MTUM",
+      "asset_class": "US Equity",
+      "current": 0.0226452664648474,
+      "qaoa": 0.011649,
+      "trade": -0.0109962664648474
+    },
+    {
+      "ticker": "USO",
+      "asset_class": "Broad Commodities",
+      "current": 0.0104021643778226,
+      "qaoa": 0.0104021643778226,
+      "trade": 0.0
+    },
+    {
+      "ticker": "XLU",
+      "asset_class": "Real-Asset Sectors",
+      "current": 0.0102159009619522,
+      "qaoa": 0.0102159009619522,
+      "trade": 0.0
+    },
+    {
+      "ticker": "INDA",
+      "asset_class": "Emerging Equity",
+      "current": 0.0100602617963192,
+      "qaoa": 0.0100602617963192,
+      "trade": 0.0
+    },
+    {
+      "ticker": "EWZ",
+      "asset_class": "Emerging Equity",
+      "current": 0.010058725581923,
+      "qaoa": 0.010058725581923,
+      "trade": 0.0
+    },
+    {
+      "ticker": "MCHI",
+      "asset_class": "Emerging Equity",
+      "current": 0.0100323029074886,
+      "qaoa": 0.0100323029074886,
+      "trade": 0.0
+    },
+    {
+      "ticker": "XLE",
+      "asset_class": "Real-Asset Sectors",
+      "current": 0.0099671441821432,
+      "qaoa": 0.0099671441821432,
+      "trade": 0.0
+    },
+    {
+      "ticker": "VWO",
+      "asset_class": "Emerging Equity",
+      "current": 0.0099481759576796,
+      "qaoa": 0.0099481759576796,
+      "trade": 0.0
+    },
+    {
+      "ticker": "EEM",
+      "asset_class": "Emerging Equity",
+      "current": 0.0099005337565895,
+      "qaoa": 0.0099005337565895,
+      "trade": 0.0
+    },
+    {
+      "ticker": "DBC",
+      "asset_class": "Broad Commodities",
+      "current": 0.0098511182430924,
+      "qaoa": 0.0098511182430924,
+      "trade": 0.0
+    },
+    {
+      "ticker": "XLB",
+      "asset_class": "Real-Asset Sectors",
+      "current": 0.0098169548559045,
+      "qaoa": 0.0098169548559045,
+      "trade": 0.0
+    },
+    {
+      "ticker": "DBA",
+      "asset_class": "Broad Commodities",
+      "current": 0.0097467173790848,
+      "qaoa": 0.0097467173790848,
+      "trade": 0.0
+    },
+    {
+      "ticker": "FXE",
+      "asset_class": "FX",
+      "current": 0.0050970214068832,
+      "qaoa": 0.0050970214068832,
+      "trade": 0.0
+    },
+    {
+      "ticker": "UUP",
+      "asset_class": "FX",
+      "current": 0.0049029785931167,
+      "qaoa": 0.0049029785931167,
+      "trade": 0.0
+    },
+    {
+      "ticker": "VUG",
+      "asset_class": "US Equity",
+      "current": 0.0237146693694932,
+      "qaoa": 0.0,
+      "trade": -0.0237146693694932
+    },
+    {
+      "ticker": "QQQ",
+      "asset_class": "US Equity",
+      "current": 0.020565269795802,
+      "qaoa": 0.0,
+      "trade": -0.020565269795802
+    }
+  ],
+  "classAllocation": [
+    {
+      "asset_class": "US Equity",
+      "current": 0.2499999999999997,
+      "qaoa": 0.1947237943698571
+    },
+    {
+      "asset_class": "Core Bonds",
+      "current": 0.1499999999999998,
+      "qaoa": 0.1499999999999998
+    },
+    {
+      "asset_class": "Government Bonds",
+      "current": 0.0999999999999999,
+      "qaoa": 0.0999999999999999
+    },
+    {
+      "asset_class": "Developed Equity",
+      "current": 0.0999999999999998,
+      "qaoa": 0.0999999999999998
+    },
+    {
+      "asset_class": "Cash",
+      "current": 0.029999999999999902,
+      "qaoa": 0.08527620563014271
+    },
+    {
+      "asset_class": "Credit",
+      "current": 0.0799999999999999,
+      "qaoa": 0.0799999999999999
+    },
+    {
+      "asset_class": "Inflation Linked",
+      "current": 0.05,
+      "qaoa": 0.05
+    },
+    {
+      "asset_class": "Emerging Equity",
+      "current": 0.049999999999999906,
+      "qaoa": 0.049999999999999906
+    },
+    {
+      "asset_class": "Real Estate",
+      "current": 0.0399999999999998,
+      "qaoa": 0.0399999999999998
+    },
+    {
+      "asset_class": "Real-Asset Sectors",
+      "current": 0.029999999999999902,
+      "qaoa": 0.029999999999999902
+    },
+    {
+      "asset_class": "Alternatives",
+      "current": 0.029999999999999902,
+      "qaoa": 0.029999999999999902
+    },
+    {
+      "asset_class": "Precious Metals",
+      "current": 0.029999999999999902,
+      "qaoa": 0.029999999999999902
+    },
+    {
+      "asset_class": "Broad Commodities",
+      "current": 0.029999999999999798,
+      "qaoa": 0.029999999999999798
+    },
+    {
+      "asset_class": "Preferred",
+      "current": 0.02,
+      "qaoa": 0.02
+    },
+    {
+      "asset_class": "FX",
+      "current": 0.009999999999999901,
+      "qaoa": 0.009999999999999901
+    }
+  ],
+  "trades": [
+    {
+      "ticker": "SGOV",
+      "asset_class": "Cash",
+      "current": 0.0142920105531489,
+      "qaoa": 0.0695682161832917,
+      "trade": 0.0552762056301428
+    },
+    {
+      "ticker": "MTUM",
+      "asset_class": "US Equity",
+      "current": 0.0226452664648474,
+      "qaoa": 0.011649,
+      "trade": -0.0109962664648474
+    },
+    {
+      "ticker": "QQQ",
+      "asset_class": "US Equity",
+      "current": 0.020565269795802,
+      "qaoa": 0.0,
+      "trade": -0.020565269795802
+    },
+    {
+      "ticker": "VUG",
+      "asset_class": "US Equity",
+      "current": 0.0237146693694932,
+      "qaoa": 0.0,
+      "trade": -0.0237146693694932
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Global equity selloff",
+      "loss": 11.4143,
+      "warningExcess": 0.0042,
+      "hardHeadroom": 3.9958
+    },
+    {
+      "name": "Inflation / rate shock",
+      "loss": 7.6814,
+      "warningExcess": 0.7096,
+      "hardHeadroom": 3.2904
+    },
+    {
+      "name": "Credit / liquidity crisis",
+      "loss": 10.403,
+      "warningExcess": 0.494,
+      "hardHeadroom": 3.506
+    },
+    {
+      "name": "Commodity supply shock",
+      "loss": 3.075,
+      "warningExcess": 1.0467,
+      "hardHeadroom": 2.9533
+    },
+    {
+      "name": "Broad deleveraging",
+      "loss": 12.716,
+      "warningExcess": 0.389,
+      "hardHeadroom": 3.611
+    }
+  ],
+  "constraints": [
+    {
+      "name": "Budget fully invested",
+      "value": "100.00%",
+      "limit": "= 100%",
+      "status": "PASS"
+    },
+    {
+      "name": "Long-only allocation",
+      "value": "No negative weights",
+      "limit": "w\u1d62 \u2265 0",
+      "status": "PASS"
+    },
+    {
+      "name": "Gross turnover",
+      "value": "11.06%",
+      "limit": "\u2264 50.00%",
+      "status": "PASS"
+    },
+    {
+      "name": "Maximum position",
+      "value": "6.96% in SGOV",
+      "limit": "\u2264 applicable 15% cash cap",
+      "status": "PASS"
+    },
+    {
+      "name": "Asset-class guardrails",
+      "value": "All 15 classes inside bounds",
+      "limit": "Policy lower / upper bands",
+      "status": "PASS"
+    },
+    {
+      "name": "Factor guardrails",
+      "value": "All modeled factors inside bounds",
+      "limit": "Equity, duration, credit, inflation, USD, trend",
+      "status": "PASS"
+    },
+    {
+      "name": "Scenario hard limits",
+      "value": "5 of 5 pass",
+      "limit": "Minimum headroom 2.95%",
+      "status": "PASS"
+    },
+    {
+      "name": "Independent validation",
+      "value": "CVXPY + KKT + enumeration",
+      "limit": "Required for final verdict",
+      "status": "PASS"
+    }
+  ],
+  "selectedSupport": [
+    "SGOV",
+    "BIL",
+    "SHY",
+    "QQQ",
+    "VUG",
+    "MTUM"
+  ],
+  "materialTrades": [
+    "SGOV",
+    "VUG",
+    "QQQ",
+    "MTUM"
+  ],
+  "qaoaEvidence": {
+    "seeds": 20,
+    "exactHits": 15,
+    "exactHitRate": 75,
+    "quboRank": 1,
+    "energyGap": 0,
+    "statesEnumerated": 462,
+    "verdict": "PASS_QAOA_EXACT"
+  }
+}
