@@ -229,7 +229,7 @@ Future work should focus on:
 ## 👥 Team Member and Contribution
 
 **Yasaman Yaghoobi — Sole Contributor** 
-Email: yaghoobi.y@northeastern.edu
+ 📧 Email: yaghoobi.y@northeastern.edu
 
 This project was completed as an individual submission. I was responsible for the full end-to-end development of the work, including the financial formulation, classical portfolio optimization, QUBO and QAOA implementation, hybrid quantum-classical integration, numerical experiments, independent validation, analysis of results, technical documentation, and presentation preparation.
 
