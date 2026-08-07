@@ -50,16 +50,16 @@ The workflow is:
 
 The continuous optimization layer includes:
 
-- expected growth and income;
-- covariance risk;
-- concentration;
-- linear transaction costs;
-- nonlinear market impact;
-- turnover;
-- liquidity and trade-capacity limits;
-- asset, asset-class, and factor exposure constraints;
-- minimum return and income requirements; and
-- scenario-warning and hard stress limits.
+- expected growth and income
+- covariance risk
+- concentration
+- linear transaction costs
+- nonlinear market impact
+- turnover
+- liquidity and trade-capacity limits
+- asset, asset-class, and factor exposure constraints
+- minimum return and income requirements, and
+- scenario-warning and hard stress limits
 
 The final portfolio weights are solved classically so that feasibility and financial constraints remain explicit and auditable.
 
