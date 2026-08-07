@@ -286,6 +286,7 @@ That is the direction this prototype is intended to make testable.
 ## 👥 Team Member and Contribution
 
 **Yasaman Yaghoobi — Sole Contributor**
+
 📧 Email : yaghoobi.y@northeastern.edu
 
 This project was completed as an individual submission. I was responsible for the end-to-end development of the work, including:
