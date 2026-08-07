@@ -1,0 +1,14 @@
+{
+  "shortlist_ranked": [
+    "Strict-warning classical",
+    "Primary unrestricted classical",
+    "QAOA / exact active-set portfolio"
+  ],
+  "primary_governance_recommendation": "Strict-warning classical",
+  "mandate_interpretation": {
+    "governance_first": "Strict-warning classical",
+    "base_objective": "Primary unrestricted classical",
+    "hybrid_demonstration": "QAOA active-rebalance"
+  },
+  "all_shortlist_hard_compliant": true
+}
