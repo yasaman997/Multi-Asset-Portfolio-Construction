@@ -1,0 +1,38 @@
+{
+  "qaoa_config": {
+    "qubits": 11,
+    "cardinality": 6,
+    "depth_p": 2,
+    "shots": 1024,
+    "optimizer_iterations": 60,
+    "seeds": 20
+  },
+  "selected_support": [
+    "SGOV",
+    "BIL",
+    "SHY",
+    "QQQ",
+    "VUG",
+    "MTUM"
+  ],
+  "material_trades": [
+    "SGOV",
+    "VUG",
+    "QQQ",
+    "MTUM"
+  ],
+  "exact_hits": 15,
+  "exact_hit_rate_pct": 75,
+  "exact_qubo_energy": -4.067965,
+  "selected_gap": 0.0,
+  "portfolio": {
+    "expected_return_pct": 5.45,
+    "volatility_pct": 7.87,
+    "worst_scenario_loss_pct": 12.72,
+    "gross_turnover_pct": 11.06,
+    "trading_cost_pct": 0.0015,
+    "effective_holdings": 35.48,
+    "soft_warnings": 5
+  },
+  "supports_quantum_advantage_claim": false
+}
