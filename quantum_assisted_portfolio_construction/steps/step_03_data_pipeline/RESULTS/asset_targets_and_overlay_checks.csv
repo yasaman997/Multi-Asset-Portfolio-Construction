@@ -1,0 +1,7 @@
+index,expected_growth_return_target,income_yield_target,expected_total_return_target,annual_volatility_target,annual_volatility_optimizer,ticker_overlay_applied
+SPY,0.056819,0.01322,0.070039,0.170266,0.173568,False
+QQQ,0.053654,0.007453,0.061107,0.208831,0.209647,True
+VUG,0.063698,0.004196,0.067894,0.181522,0.181805,True
+IWM,0.060276,0.020676,0.080952,0.213043,0.214041,True
+USMV,0.051127,0.015906,0.067032,0.121924,0.125101,True
+SCHD,0.046323,0.032073,0.078396,0.163558,0.163896,True
