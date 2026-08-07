@@ -1,58 +1,56 @@
 # Quantum-Assisted Multi-Asset Portfolio Construction
-### A Hybrid Classical–Quantum Optimization Framework
 
-![Python](https://img.shields.io/badge/Python-3.11-blue) ![Qiskit](https://img.shields.io/badge/Qiskit-2.x-purple) ![Project](https://img.shields.io/badge/Project-Research%20Prototype-green)
+### Hybrid Classical–Quantum Portfolio Optimization
 
-This project develops a finance-first hybrid quantum-classical framework for multi-asset portfolio construction. It combines realistic financial modeling, classical portfolio optimization, reduced-QUBO active-support selection using the Quantum Approximate Optimization Algorithm (QAOA), continuous portfolio refinement, independent numerical validation, and an explainable portfolio decision-support layer.
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Qiskit](https://img.shields.io/badge/Qiskit-2.x-purple)
+![CVXPY](https://img.shields.io/badge/CVXPY-Convex%20Optimization-orange)
+![Project](https://img.shields.io/badge/Project-Research%20Prototype-green)
 
-The work was developed by **Yasaman Yaghoobi** as an individual project through the **WISER Quantum Summer Program**, for the **Vanguard-sponsored Multi-Asset Portfolio Construction Challenge**.
+This project explores how quantum optimization can be integrated into a realistic multi-asset portfolio-construction workflow without replacing the classical methods that are already well suited to continuous allocation and risk control.
 
----
-
-## 🎯 Challenge Overview
-
-Institutional portfolio construction requires balancing multiple competing objectives simultaneously:
-
-- expected capital appreciation;
-- portfolio income;
-- covariance risk;
-- diversification and concentration;
-- transaction costs and nonlinear market impact;
-- liquidity and turnover;
-- exposure guardrails; and
-- scenario-based stress risk.
-
-The objective of this project is to investigate how a hybrid quantum-classical optimization workflow can support a realistic portfolio-construction process while preserving financial feasibility, interpretability, and rigorous numerical validation.
+The work was developed by **Yasaman Yaghoobi** as an individual project through the **WISER Quantum Summer Program** for the **Vanguard-sponsored Multi-Asset Portfolio Construction Challenge**.
 
 ---
 
-## 🛠️ Proposed Solution
+## 🎯 Challenge
 
-Rather than replacing established portfolio optimization methods, the project separates the problem according to its mathematical structure:
+Multi-asset portfolio construction requires more than maximizing expected return. A practical solution must balance return, income, risk, diversification, transaction costs, liquidity, turnover, exposure limits, and stress behavior at the same time.
 
-1. formulate the full continuous 50-asset financial problem;
-2. construct and validate the portfolio data and cost inputs;
-3. solve classical baseline portfolios under progressively realistic constraints;
-4. calibrate investor preferences using dimensionless objective scaling;
-5. identify a reduced set of candidate active coordinates using classical screening;
-6. build an active-rebalance QUBO over those binary permissions;
-7. use fixed-cardinality QAOA to search the reduced support space;
-8. refine selected supports using the exact continuous portfolio model;
-9. independently reconstruct and validate the continuous solutions; and
-10. compare and communicate final portfolio candidates through a decision-support layer.
-
-The resulting workflow combines continuous classical portfolio optimization with reduced-QUBO active-support selection in a practical hybrid architecture.
+The challenge addressed here was to build a **50-asset portfolio framework** that handles those financial requirements while also identifying a credible role for quantum optimization.
 
 ---
 
-## ⚙️ Methods and Tools
+## 🛠️ Approach
 
-### Financial Optimization Model
+The project uses a hybrid architecture with clear responsibilities for the classical and quantum components.
 
-The continuous portfolio model incorporates:
+**Classical optimization** handles the full continuous portfolio problem, including final asset weights and financial constraints.
 
-- expected growth;
-- income yield;
+**Quantum optimization** is used for a reduced combinatorial decision: selecting which portfolio coordinates are allowed to participate in an active rebalance.
+
+The workflow is:
+
+1. formulate the full 50-asset financial optimization problem;
+2. build and validate the portfolio data and cost inputs;
+3. solve classical baseline portfolios;
+4. calibrate investor preferences and risk controls;
+5. screen a smaller set of candidate rebalance coordinates;
+6. formulate the reduced active-support problem as a QUBO;
+7. use QAOA to search the feasible support space;
+8. return selected supports to the full continuous portfolio model;
+9. independently reconstruct and validate the resulting portfolios; and
+10. compare the final candidates through an explainable decision-support layer.
+
+---
+
+## ⚙️ Methods
+
+### Classical portfolio model
+
+The continuous optimization layer includes:
+
+- expected growth and income;
 - covariance risk;
 - concentration;
 - linear transaction costs;
@@ -63,128 +61,128 @@ The continuous portfolio model incorporates:
 - minimum return and income requirements; and
 - scenario-warning and hard stress limits.
 
-Continuous portfolio weights are solved classically because the financial problem is convex and can be audited directly.
+The final portfolio weights are solved classically so that feasibility and financial constraints remain explicit and auditable.
 
-### Hybrid Quantum Optimization
+### Hybrid quantum layer
 
-The quantum layer is applied to a reduced active-support selection problem rather than to the complete 50-asset continuous allocation.
+The final quantum experiment uses:
 
-The final experiment uses:
+| Setting | Value |
+|---|---:|
+| Candidate active coordinates | 11 |
+| Coordinates selected | 6 |
+| Feasible supports | 462 |
+| QAOA depth | p = 2 |
+| Shots per run | 1,024 |
+| Independent seeds | 20 |
+| Classical optimizer iterations | 60 |
+| Simulator | Qiskit Aer |
 
-- **11 screened binary active-coordinate permissions**;
-- **cardinality 6**, giving \(\binom{11}{6}=462\) feasible supports;
-- **QAOA depth \(p=2\)**;
-- **1,024 shots per run**;
-- **60 classical optimizer iterations**;
-- **20 independent seeds**;
-- a fixed-cardinality Dicke initial state;
-- an XY-ring mixer; and
-- Qiskit Aer simulation.
+The reduced binary problem has the standard QUBO form:
 
-For screened coordinate \(i\), the implemented active-rebalance QUBO uses
+```math
+E(z) = q^\top z + z^\top Qz,
+\qquad
+z \in \{0,1\}^{11},
+\qquad
+\sum_{i=1}^{11} z_i = 6
+```
 
-$$
-q_i=-\widetilde s_i^{\,2}+0.05\,\widetilde c_i\widetilde s_i
-$$
+The QUBO is used as a **support-ranking surrogate**. It ranks candidate rebalance supports using information from marginal portfolio value, trading costs, covariance interactions, and market-impact interactions. Final weights and all portfolio constraints are restored in the continuous optimization stage.
 
-with quadratic interaction matrix
+<details>
+<summary><strong>Technical QUBO specification</strong></summary>
 
-$$
-Q=
-\lambda_b\widetilde t\widetilde t^{\mathsf T}
-+0.04(\widetilde t\widetilde t^{\mathsf T})\odot\widetilde\Sigma
-+0.02(\widetilde t\widetilde t^{\mathsf T})\odot\widetilde\Gamma
-$$
+For screened coordinate \(i\), the implemented linear term is:
 
-where \(\lambda_b=1\) in the final configuration.
+```math
+q_i =
+-\widetilde{s}_i^2
++ 0.05\,\widetilde{c}_i\widetilde{s}_i
+```
 
-This reduced QUBO is a **support-ranking surrogate**. The complete financial objective and all portfolio constraints are restored during downstream continuous refinement.
+The quadratic interaction matrix is:
 
-### Validation
+```math
+Q =
+\lambda_b \widetilde{t}\widetilde{t}^{\top}
++0.04(\widetilde{t}\widetilde{t}^{\top})\odot\widetilde{\Sigma}
++0.02(\widetilde{t}\widetilde{t}^{\top})\odot\widetilde{\Gamma},
+\qquad
+\lambda_b = 1
+```
 
-The project uses multiple validation layers rather than relying on solver convergence alone.
+This specification describes the executed reduced active-rebalance QUBO. It is not the full continuous financial objective.
 
-Validation includes:
+</details>
+
+### Independent validation
+
+The project does not rely on a single solver result. Validation includes:
 
 - covariance positive-semidefinite checks;
 - budget and trade-accounting checks;
-- complete hard-constraint audits;
+- hard-constraint audits;
 - independent CVXPY reconstruction;
 - Clarabel and OSQP validation solves;
-- convexity verification;
-- Karush-Kuhn-Tucker (KKT) residual checks;
-- exact enumeration of all 462 reduced-QUBO states;
-- greedy and local-search reduced-problem baselines;
-- common synthetic forward-path analysis; and
-- benchmark and scoring-weight sensitivity analysis.
-
-The continuous validation establishes that the declared convex portfolio problems are solved consistently under the stated model assumptions.
-
-### Technologies
-
-- Python
-- NumPy
-- pandas
-- SciPy
-- CVXPY
-- Clarabel
-- OSQP
-- Qiskit
-- Qiskit Aer
-- Qiskit Optimization
-- Matplotlib
-- Jupyter Notebook
+- convexity checks;
+- KKT residual checks;
+- exact enumeration of all 462 reduced-QUBO supports;
+- greedy and local-search baselines; and
+- common synthetic forward-path analysis.
 
 ---
 
 ## 📈 Results and Findings
 
-The final certified shortlist is:
+### Final portfolio shortlist
 
 | Portfolio | Expected Return | Volatility | Worst Stress | Turnover | Trading Cost | Soft Warnings |
 |---|---:|---:|---:|---:|---:|---:|
-| Primary unrestricted classical | 5.49% | 7.86% | 12.71% | 13.09% | 0.0020% | 5 |
+| Primary classical | 5.49% | 7.86% | 12.71% | 13.09% | 0.0020% | 5 |
 | Strict-warning classical | 5.48% | 7.51% | 12.17% | 23.88% | 0.0056% | 0 |
-| Hybrid QAOA active-rebalance | 5.45% | 7.87% | 12.72% | 11.06% | 0.0015% | 5 |
+| Hybrid QAOA | 5.45% | 7.87% | 12.72% | 11.06% | 0.0015% | 5 |
 
-The selected QAOA support is:
+### QAOA support
+
+The selected support is:
 
 **SGOV, BIL, SHY, QQQ, VUG, MTUM**
 
-Continuous refinement produces four material trades:
+After continuous refinement, the material portfolio changes are:
 
-- **SGOV:** +5.53 percentage points
-- **VUG:** -2.37 percentage points
-- **QQQ:** -2.06 percentage points
-- **MTUM:** -1.10 percentage points
+| Asset | Weight Change |
+|---|---:|
+| SGOV | +5.53 percentage points |
+| VUG | -2.37 percentage points |
+| QQQ | -2.06 percentage points |
+| MTUM | -1.10 percentage points |
 
-BIL and SHY remain permitted coordinates but receive no material incremental trade.
+BIL and SHY remain permitted rebalance coordinates but receive no material incremental trade.
 
-Fifteen of twenty independently optimized QAOA seeds reached the exact minimum of the executed reduced QUBO. The selected best run therefore has zero reduced-QUBO energy gap.
+### Quantum benchmarking
 
-The exactness claim is deliberately limited to
+Exact classical enumeration was performed over **all 462 feasible reduced-QUBO supports**.
 
-\[
-z_Q^*
-=
-\arg\min_{z:\mathbf 1^T z=6}
-E_{\mathrm{QUBO}}(z).
-\]
+- **15 of 20** independently optimized QAOA seeds reached the exact reduced-QUBO minimum.
+- The selected best run ranked **#1 of 462**.
+- The selected run had **zero reduced-QUBO energy gap**.
 
-The project does **not** claim exhaustive continuous optimization over all 462 supports, quantum speedup, or quantum computational advantage.
+This establishes exact recovery for the **executed reduced QUBO** in the selected run. It does **not** establish a quantum speedup, quantum computational advantage, or exhaustive optimality of the full continuous portfolio problem across all 462 supports.
 
-### Main findings
+### Main takeaway
 
-- A realistic multi-asset portfolio can be formulated and solved within a disciplined hybrid workflow.
-- Continuous classical optimization remains the appropriate source of truth for final portfolio weights and financial feasibility.
-- QAOA can be integrated as a reduced active-support selector within a larger finance-first optimization process.
-- The selected best-of-20 QAOA run reaches the exact minimum of the executed 462-state reduced QUBO.
-- Independent solver reconstruction and KKT checks provide strong validation of the continuous optimization results.
-- An explainable decision-support layer can expose portfolio trade-offs, constraints, and provenance without obscuring the underlying optimization.
+The strongest result is not that quantum optimization replaces classical portfolio construction. Instead, the project shows a practical way to use QAOA as a **targeted combinatorial layer** inside a broader workflow where classical optimization remains responsible for final weights, financial feasibility, and risk controls.
 
 ---
 
-## Repository Structure
+## 🧰 Technologies
+
+`Python` · `NumPy` · `pandas` · `SciPy` · `CVXPY` · `Clarabel` · `OSQP` · `Qiskit` · `Qiskit Aer` · `Qiskit Optimization` · `Matplotlib` · `Jupyter Notebook`
+
+---
+
+## 📁 Repository Structure
 
 ```text
 quantum-assisted-portfolio-construction/
@@ -207,43 +205,31 @@ quantum-assisted-portfolio-construction/
 └── supporting_materials/
 ```
 
-The `steps/` directory contains the main implementation, technical reports, notebooks, and saved results. The `supporting_materials/` directory contains selected documentation useful for interpretation and reproducibility without cluttering the main project view.
+The `steps/` directory contains the main implementation, notebooks, reports, and saved results. `supporting_materials/` contains selected documentation for interpretation and reproducibility.
 
 ---
 
-## 🔮 Limitations and Recommended Next Steps
+## 🔮 Limitations and Next Steps
 
-This project is a research prototype rather than an investment product.
+The current project is a research prototype. The main limitations are the use of a controlled synthetic financial model, simulator-based QAOA, classical pre-screening of the 11-coordinate quantum search space, and the fact that the full continuous portfolio model was not reoptimized for every one of the 462 possible supports.
 
-Important limitations include:
+Future work should focus on:
 
-- final numerical evidence is based on a controlled synthetic financial model rather than rolling historical out-of-sample performance;
-- the executed QUBO is a reduced support-ranking surrogate rather than the complete continuous financial objective;
-- exhaustive continuous refinement over all 462 supports was not performed;
-- the final quantum experiment uses simulation rather than production quantum hardware;
-- the reduced 462-state problem is classically easy to enumerate;
-- no computational quantum advantage is demonstrated;
-- the 11-coordinate quantum search space is preconditioned by classical screening;
-- the provisional Step 4 leaders use the full 50% turnover allowance; and
-- ETF-level diversification measures do not provide full constituent-level look-through.
-
-Recommended next steps include:
-
-- rolling historical out-of-sample validation;
+- rolling historical out-of-sample testing;
 - empirical transaction-cost and liquidity calibration;
-- continuous refinement across the complete reduced support space;
+- full continuous refinement across the reduced support space;
 - turnover-limit sensitivity analysis;
-- constituent-level ETF look-through and factor-overlap analysis;
-- larger QAOA instances with systematic runtime and circuit-scaling benchmarks;
-- noisy-simulator experiments; and
-- quantum-hardware evaluation.
+- larger QAOA instances and systematic scaling studies;
+- noisy-simulator and quantum-hardware experiments;
+- matched classical-versus-quantum runtime comparisons; and
+- constituent-level ETF look-through and factor-overlap analysis.
 
 ---
 
 ## 👥 Team Member and Contribution
 
-**Yasaman Yaghoobi — Sole Contributor**
-**Email: yaghoobi.y@northeastern.edu**
+**Yasaman Yaghoobi — Sole Contributor** 
+** Email: yaghoobi.y@northeastern.edu**
 
 This project was completed as an individual submission. I was responsible for the full end-to-end development of the work, including the financial formulation, classical portfolio optimization, QUBO and QAOA implementation, hybrid quantum-classical integration, numerical experiments, independent validation, analysis of results, technical documentation, and presentation preparation.
 
@@ -252,6 +238,7 @@ This project was completed as an individual submission. I was responsible for th
 ## AI Assistance
 
 General AI assistance was used for technical writing support, presentation preparation, and code debugging.
+
 
 
 ---
