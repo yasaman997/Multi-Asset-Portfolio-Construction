@@ -1,0 +1,5 @@
+index,kkt_certificate_pass
+base_global,True
+qaoa_fixed_support,True
+exact_fixed_support,True
+strict_global,True

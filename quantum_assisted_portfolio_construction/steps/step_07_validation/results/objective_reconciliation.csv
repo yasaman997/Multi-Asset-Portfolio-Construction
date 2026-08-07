@@ -1,0 +1,10 @@
+index,value
+qaoa_fixed_support_refinement_verdict,PASS_OPTIMUM_MATCH
+exact_fixed_support_refinement_verdict,PASS_OPTIMUM_MATCH
+qaoa_classical_qubo_rank,1
+qaoa_qubo_energy_gap,0.0
+qaoa_exact_qubo_optimum,True
+qaoa_financial_objective,-0.798818
+exact_active_financial_objective,-0.798818
+financial_objective_gap_qaoa_minus_exact,0.0
+qaoa_and_exact_support_overlap,1.0

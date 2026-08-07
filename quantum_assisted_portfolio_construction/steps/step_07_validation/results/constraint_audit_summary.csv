@@ -1,0 +1,5 @@
+validation_solution,constraint_count,failed_constraint_count,maximum_absolute_violation,solver_success
+base_global,130,0,2.22e-16,True
+qaoa_fixed_support,174,0,1.041e-17,True
+exact_fixed_support,174,0,1.041e-17,True
+strict_global,130,0,7.772e-16,True

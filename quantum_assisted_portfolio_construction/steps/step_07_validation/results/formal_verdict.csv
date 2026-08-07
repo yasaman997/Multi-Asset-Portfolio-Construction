@@ -1,0 +1,6 @@
+index,value
+stored_starting_point_selectable,False
+all_selected_solvers_are_cvxpy,True
+all_kkt_certificates_pass,True
+scipy_results_are_diagnostic_only,True
+independent_solver_requirement_pass,True

@@ -1,0 +1,16 @@
+index,value
+original_continuous_solver,Step 4 SciPy SLSQP
+independent_reported_solver,CVXPY convex QP using Clarabel/OSQP
+algorithmic_cross_check,SciPy trust-constr
+secondary_diagnostic,SciPy SLSQP with separated equality and inequa...
+stored_starting_point_role,initialization only; never selectable
+binary_validator,complete fixed-cardinality enumeration
+kkt_certificate,"primal, stationarity, complementarity, and dua..."
+full_space_policy,base soft-warning policy
+strict_policy_validation,True
+feasibility_tolerance,0.000005
+objective_match_tolerance,0.00002
+fixed_support_objective_tolerance,0.00003
+kkt_stationarity_tolerance,0.0001
+kkt_complementarity_tolerance,0.00001
+dual_feasibility_tolerance,0.0

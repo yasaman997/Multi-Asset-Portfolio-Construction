@@ -1,0 +1,8 @@
+index,value
+covariance_minimum_eigenvalue,0.000009
+impact_minimum_eigenvalue,0.000199
+objective_hessian_minimum_eigenvalue,0.0
+penalty_coefficients_nonnegative,True
+linear_constraint_system,True
+continuous_problem_convex,True
+global_optimum_interpretation,True

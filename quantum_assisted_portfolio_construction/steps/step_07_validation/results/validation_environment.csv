@@ -1,0 +1,7 @@
+index,value
+cvxpy_available,True
+cvxpy_version,1.6.7
+installed_solvers,"CLARABEL, CVXOPT, GLPK, GLPK_MI, HIGHS, OSQP, ..."
+clarabel_available,True
+osqp_available,True
+error,

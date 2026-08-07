@@ -1,0 +1,5 @@
+index,selected_solver_source
+base_global,cvxpy_clarabel
+qaoa_fixed_support,cvxpy_osqp
+exact_fixed_support,cvxpy_osqp
+strict_global,cvxpy_clarabel

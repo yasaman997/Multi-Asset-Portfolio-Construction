@@ -1,0 +1,4 @@
+profile,base_policy_objective,objective_gap_to_base_global_optimum,expected_total_return,volatility,worst_scenario_loss,gross_turnover,total_trading_cost,hard_constraint_pass
+Primary unrestricted classical,-0.7997879015,0.0,5.49%,7.86%,12.71%,13.09%,0.0020%,True
+Independent Qiskit QAOA,-0.798817809,0.00097,5.45%,7.87%,12.72%,11.06%,0.0015%,True
+Classical strict-warning reference,-0.7826843669,0.017104,5.48%,7.51%,12.17%,23.88%,0.0056%,True

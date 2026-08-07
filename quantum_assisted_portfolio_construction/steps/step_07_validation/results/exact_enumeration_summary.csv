@@ -1,0 +1,12 @@
+index,value
+state_count,462
+n_variables,11
+cardinality,6
+exact_energy,-4.067965
+qaoa_energy,-4.067965
+qaoa_energy_gap,0.0
+qaoa_classical_rank,1
+qaoa_exact_optimum,True
+reported_exact_set_matches_reenumeration,True
+exact_selected_tickers,"SGOV, BIL, SHY, QQQ, VUG, MTUM"
+qaoa_selected_tickers,"SGOV, BIL, SHY, QQQ, VUG, MTUM"

@@ -1,0 +1,5 @@
+comparison,weight_l1_difference,weight_linf_difference
+primary_classical,2.067e-10,1.025e-10
+qaoa_fixed_support,1.573e-14,6.925e-15
+exact_fixed_support,1.573e-14,6.925e-15
+strict_warning,9.076e-07,3.268e-07
