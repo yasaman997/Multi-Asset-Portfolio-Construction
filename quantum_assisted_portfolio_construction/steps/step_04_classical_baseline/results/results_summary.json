@@ -1,0 +1,47 @@
+{
+  "ladder": [
+    {
+      "stage": "Minimum variance",
+      "return_pct": 4.08,
+      "volatility_pct": 0.45,
+      "gross_turnover_pct": 190.59,
+      "hard_breaches": 13
+    },
+    {
+      "stage": "Mean variance",
+      "return_pct": 5.73,
+      "volatility_pct": 3.81,
+      "gross_turnover_pct": 178.02,
+      "hard_breaches": 8
+    },
+    {
+      "stage": "Asset caps",
+      "return_pct": 5.82,
+      "volatility_pct": 5.93,
+      "gross_turnover_pct": 133.41,
+      "hard_breaches": 4
+    },
+    {
+      "stage": "Guardrails",
+      "return_pct": 5.8,
+      "volatility_pct": 5.97,
+      "gross_turnover_pct": 110.6,
+      "hard_breaches": 1
+    },
+    {
+      "stage": "Trading costs",
+      "return_pct": 5.44,
+      "volatility_pct": 6.0,
+      "gross_turnover_pct": 50.0,
+      "hard_breaches": 0
+    },
+    {
+      "stage": "Scenario aware",
+      "return_pct": 5.38,
+      "volatility_pct": 5.94,
+      "gross_turnover_pct": 50.0,
+      "hard_breaches": 0
+    }
+  ],
+  "main_result": "Only the trading-cost and scenario-aware stages pass the final hard policy."
+}
