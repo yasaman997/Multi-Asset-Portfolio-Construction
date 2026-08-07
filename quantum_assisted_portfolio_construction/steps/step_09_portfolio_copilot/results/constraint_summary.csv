@@ -1,0 +1,9 @@
+name,value,limit,status
+Budget fully invested,100.00%,= 100%,PASS
+Long-only allocation,No negative weights,wᵢ ≥ 0,PASS
+Gross turnover,11.06%,≤ 50.00%,PASS
+Maximum position,6.96% in SGOV,≤ applicable 15% cash cap,PASS
+Asset-class guardrails,All 15 classes inside bounds,Policy lower / upper bands,PASS
+Factor guardrails,All modeled factors inside bounds,"Equity, duration, credit, inflation, USD, trend",PASS
+Scenario hard limits,5 of 5 pass,Minimum headroom 2.95%,PASS
+Independent validation,CVXPY + KKT + enumeration,Required for final verdict,PASS
