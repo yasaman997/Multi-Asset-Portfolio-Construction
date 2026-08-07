@@ -39,7 +39,7 @@ The workflow is:
 6. formulate the reduced active-support problem as a QUBO
 7. use QAOA to search the feasible support space
 8. return selected supports to the full continuous portfolio model
-9. independently reconstruct and validate the resulting portfolios, and
+9. independently reconstruct and validate the resulting portfolios 
 10. compare the final candidates through an explainable decision-support layer
 
 ---
@@ -58,7 +58,7 @@ The continuous optimization layer includes:
 - turnover
 - liquidity and trade-capacity limits
 - asset, asset-class, and factor exposure constraints
-- minimum return and income requirements, and
+- minimum return and income requirements
 - scenario-warning and hard stress limits
 
 The final portfolio weights are solved classically so that feasibility and financial constraints remain explicit and auditable.
@@ -128,7 +128,7 @@ The project does not rely on a single solver result. Validation includes:
 - convexity checks
 - KKT residual checks
 - exact enumeration of all 462 reduced-QUBO supports
-- greedy and local-search baselines, and
+- greedy and local-search baselines
 - common synthetic forward-path analysis
 
 ---
@@ -221,7 +221,7 @@ Future work should focus on:
 - turnover-limit sensitivity analysis
 - larger QAOA instances and systematic scaling studies
 - noisy-simulator and quantum-hardware experiments
-- matched classical-versus-quantum runtime comparisons, and
+- matched classical-versus-quantum runtime comparisons
 - constituent-level ETF look-through and factor-overlap analysis
 
 ---
@@ -240,9 +240,5 @@ This project was completed as an individual submission. I was responsible for th
 General AI assistance was used for technical writing support, presentation preparation, and code debugging.
 
 
-
----
-
-## License
 
 This repository is provided for research and educational purposes.
