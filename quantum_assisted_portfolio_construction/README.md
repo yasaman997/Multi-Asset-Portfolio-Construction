@@ -83,18 +83,18 @@ The final experiment uses:
 
 For screened coordinate \(i\), the implemented active-rebalance QUBO uses
 
-\[
-q_i=-\widetilde s_i^{\,2}+0.05\,\widetilde c_i\widetilde s_i,
-\]
+$$
+q_i=-\widetilde s_i^{\,2}+0.05\,\widetilde c_i\widetilde s_i
+$$
 
 with quadratic interaction matrix
 
-\[
+$$
 Q=
 \lambda_b\widetilde t\widetilde t^{\mathsf T}
 +0.04(\widetilde t\widetilde t^{\mathsf T})\odot\widetilde\Sigma
-+0.02(\widetilde t\widetilde t^{\mathsf T})\odot\widetilde\Gamma,
-\]
++0.02(\widetilde t\widetilde t^{\mathsf T})\odot\widetilde\Gamma
+$$
 
 where \(\lambda_b=1\) in the final configuration.
 
