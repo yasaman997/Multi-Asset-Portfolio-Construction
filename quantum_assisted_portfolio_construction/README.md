@@ -31,16 +31,16 @@ The project uses a hybrid architecture with clear responsibilities for the class
 
 The workflow is:
 
-1. formulate the full 50-asset financial optimization problem;
-2. build and validate the portfolio data and cost inputs;
-3. solve classical baseline portfolios;
-4. calibrate investor preferences and risk controls;
-5. screen a smaller set of candidate rebalance coordinates;
-6. formulate the reduced active-support problem as a QUBO;
-7. use QAOA to search the feasible support space;
-8. return selected supports to the full continuous portfolio model;
-9. independently reconstruct and validate the resulting portfolios; and
-10. compare the final candidates through an explainable decision-support layer.
+1. formulate the full 50-asset financial optimization problem
+2. build and validate the portfolio data and cost inputs
+3. solve classical baseline portfolios
+4. calibrate investor preferences and risk controls
+5. screen a smaller set of candidate rebalance coordinates
+6. formulate the reduced active-support problem as a QUBO
+7. use QAOA to search the feasible support space
+8. return selected supports to the full continuous portfolio model
+9. independently reconstruct and validate the resulting portfolios, and
+10. compare the final candidates through an explainable decision-support layer
 
 ---
 
@@ -120,16 +120,16 @@ This specification describes the executed reduced active-rebalance QUBO. It is n
 
 The project does not rely on a single solver result. Validation includes:
 
-- covariance positive-semidefinite checks;
-- budget and trade-accounting checks;
-- hard-constraint audits;
-- independent CVXPY reconstruction;
-- Clarabel and OSQP validation solves;
-- convexity checks;
-- KKT residual checks;
-- exact enumeration of all 462 reduced-QUBO supports;
-- greedy and local-search baselines; and
-- common synthetic forward-path analysis.
+- covariance positive-semidefinite checks
+- budget and trade-accounting checks
+- hard-constraint audits
+- independent CVXPY reconstruction
+- Clarabel and OSQP validation solves
+- convexity checks
+- KKT residual checks
+- exact enumeration of all 462 reduced-QUBO supports
+- greedy and local-search baselines, and
+- common synthetic forward-path analysis
 
 ---
 
@@ -215,21 +215,21 @@ The current project is a research prototype. The main limitations are the use of
 
 Future work should focus on:
 
-- rolling historical out-of-sample testing;
-- empirical transaction-cost and liquidity calibration;
-- full continuous refinement across the reduced support space;
-- turnover-limit sensitivity analysis;
-- larger QAOA instances and systematic scaling studies;
-- noisy-simulator and quantum-hardware experiments;
-- matched classical-versus-quantum runtime comparisons; and
-- constituent-level ETF look-through and factor-overlap analysis.
+- rolling historical out-of-sample testing
+- empirical transaction-cost and liquidity calibration
+- full continuous refinement across the reduced support space
+- turnover-limit sensitivity analysis
+- larger QAOA instances and systematic scaling studies
+- noisy-simulator and quantum-hardware experiments
+- matched classical-versus-quantum runtime comparisons, and
+- constituent-level ETF look-through and factor-overlap analysis
 
 ---
 
 ## 👥 Team Member and Contribution
 
 **Yasaman Yaghoobi — Sole Contributor** 
-** Email: yaghoobi.y@northeastern.edu**
+Email: yaghoobi.y@northeastern.edu
 
 This project was completed as an individual submission. I was responsible for the full end-to-end development of the work, including the financial formulation, classical portfolio optimization, QUBO and QAOA implementation, hybrid quantum-classical integration, numerical experiments, independent validation, analysis of results, technical documentation, and presentation preparation.
 
