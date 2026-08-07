@@ -1,0 +1,25 @@
+{
+  "final_data_source": "synthetic",
+  "asset_count": 50,
+  "historical_branch_available": true,
+  "historical_branch_used_in_final_run": false,
+  "ticker_overlays": {
+    "SCHD": "higher income",
+    "USMV": "lower volatility",
+    "IWM": "higher small-cap risk",
+    "QQQ/VUG": "higher growth"
+  },
+  "cost_model": [
+    "linear execution cost",
+    "quadratic market impact",
+    "participation sensitivity",
+    "institutional sensitivity"
+  ],
+  "validation": {
+    "covariance_psd": true,
+    "correlation_unit_diagonal": true,
+    "costs_nonnegative": true,
+    "all_checks_pass": true
+  },
+  "known_reporting_issue": "Synthetic business-day labels begin in 2000 while the notebook describes a 2021\u20132026 modeling window."
+}
