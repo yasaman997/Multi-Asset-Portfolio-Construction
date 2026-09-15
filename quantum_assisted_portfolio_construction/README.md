@@ -283,26 +283,6 @@ That is the direction this prototype is intended to make testable.
 
 ---
 
-## 👥 Team Member and Contribution
-
-**Yasaman Yaghoobi — Sole Contributor**
-
-📧 Email : yaghoobi.y@northeastern.edu
-
-This project was completed as an individual submission. I was responsible for the end-to-end development of the work, including:
-
-- financial problem formulation and portfolio modeling
-- data-pipeline design and validation
-- classical optimization and constraint modeling
-- QUBO/Ising formulation
-- QAOA implementation and hybrid integration
-- numerical experiments and benchmarking
-- independent CVXPY/KKT validation
-- portfolio comparison and interpretation
-- decision-support prototype development
-- technical documentation and presentation preparation
-
----
 
 ## License
 
